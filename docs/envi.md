@@ -3,7 +3,7 @@ layout: spec
 permalink: /envi
 latex: true
 
-title: Homework 1 – Numbers and Images
+title: VSCode Enviroment
 due: 11:59 p.m. on Wednesday January 31st, 2024
 ---
 
