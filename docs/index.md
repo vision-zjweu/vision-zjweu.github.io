@@ -12,7 +12,7 @@ layout: spec
 ## 环境搭建
 
 - [安装`Anaconda`](envi.md)
-- [设置VS Code](envi.md)
+- [设置`VS Code`](envi.md)
 
 ## 实践课
 - [Homework 1: Numbers and Images](hw1.md)
