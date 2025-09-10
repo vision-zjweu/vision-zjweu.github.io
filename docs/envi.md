@@ -60,3 +60,4 @@ VSCode 是一个基于图形界面的文本编辑器和开发环境。系里的�
 
 对于Jupyter Notebook，安装 Microsoft 的 `Jupyter` 扩展。 
 
+# 其他
