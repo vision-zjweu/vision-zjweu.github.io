@@ -7,7 +7,7 @@ layout: spec
 
 
 
-# 作业
+# 编程projects
 
 ## 环境搭建
 - [设置VS Code](envi.md)
