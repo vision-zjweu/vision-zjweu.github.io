@@ -10,6 +10,8 @@ layout: spec
 # 编程projects
 
 ## 环境搭建
+
+- [安装`Anaconda`](envi.md)
 - [设置VS Code](envi.md)
 
 ## 实践课
