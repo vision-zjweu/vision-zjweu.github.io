@@ -18,6 +18,10 @@ layout: spec
 ## 理论课
 - [Homework 1: Numbers and Images](hw1.md)
 
+## 实践期末项目指导
+
+详细说明见 [这里](proj.md)。
+
 # 课程说明
 
 ## 先修要求
@@ -52,8 +56,7 @@ layout: spec
 
 
 
-## 实践项目指导
-详细说明见 [这里](proj.md)。
+
 
 
 
