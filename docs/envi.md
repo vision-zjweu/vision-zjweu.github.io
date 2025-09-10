@@ -1,3 +1,35 @@
+---
+layout: spec
+permalink: /envi
+latex: true
+
+title: VSCode 环境
+due: 11:59 p.m. on Wednesday January 31st, 2024
+---
+
+<link href="style.css" rel="stylesheet">
+<div style="display:none">
+	<!-- Define LaTeX commands here -->
+	\(
+		\DeclareMathOperator*{\argmin}{arg\,min}
+
+		\newcommand{\DB}{\mathbf{D}}
+		\newcommand{\NB}{\mathbf{N}}
+		\newcommand{\PB}{\mathbf{P}}
+		\newcommand{\SB}{\mathbf{S}}
+		\newcommand{\XB}{\mathbf{X}}
+
+		\newcommand{\xB}{\mathbf{x}}
+		\newcommand{\yB}{\mathbf{y}}
+	\)
+
+</div>
+
+{% capture code %}<i class="fa fa-code icon-large"></i>{% endcapture %}
+{% capture autograde %}<i class="fa fa-robot icon-large"></i>{% endcapture %}
+{% capture report %}<i class="fa fa-file icon-large"></i>{% endcapture %}
+
+
 # Overview
 
 VSCode 是一个基于图形界面的文本编辑器和开发环境。系里的电脑上已经预装了 VSCode，本地电脑则可以从 VSCode 官网下载安装。安装完成后，我们会将 VSCode 配置为使用我们的虚拟环境。VSCode 是本课程唯一正式支持的 IDE。
@@ -11,3 +43,4 @@ VSCode 是一个基于图形界面的文本编辑器和开发环境。系里的�
 我们建议你确保已安装来自 Microsoft 的 `Python` 和 `Pylance` 扩展。
 
 对于Jupyter Notebook，安装 Microsoft 的 `Jupyter` 扩展。 
+
