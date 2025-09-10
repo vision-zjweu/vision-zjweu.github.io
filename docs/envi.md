@@ -3,7 +3,7 @@ layout: spec
 permalink: /envi
 latex: true
 
-title: Homework 1 – Numbers and Images
+title: VSCode 环境
 due: 11:59 p.m. on Wednesday January 31st, 2024
 ---
 
@@ -29,7 +29,7 @@ due: 11:59 p.m. on Wednesday January 31st, 2024
 {% capture autograde %}<i class="fa fa-robot icon-large"></i>{% endcapture %}
 {% capture report %}<i class="fa fa-file icon-large"></i>{% endcapture %}
 
-# Homework 1 – Numbers and Images
+# VSCode 环境
 
 <div class="primer-spec-callout warning" markdown="1">
    
