@@ -4,7 +4,9 @@ layout: spec
 
 <link href="style.css" rel="stylesheet">
 
+# 环境搭建
 
+- [如何在你的电脑上搭建编程环境](envi.mdßß)
 
 
 # 作业
@@ -31,7 +33,7 @@ layout: spec
 
 本课程没有指定的教材。对于特别棘手的作业，我们通常会提供讲义作为帮助。以下几本可选书籍可能会对你有用，我们也会在部分课程中推荐这些书籍的阅读内容：
 - Computer Vision: Algorithms and Applications by Richard Szeliski: [这里可以获取免费版本](http://szeliski.org/Book/){:target="_blank"}. (S)
-- Computer vision: A Modern Approach (Second Edition), by David Forsyth and Jean Ponce. 
+- Deep Learning, by Goodfellow, Bengio, and Courville. [这里可以获取免费版本](https://www.deeplearningbook.org/)
 
 
 ## 如何评分
