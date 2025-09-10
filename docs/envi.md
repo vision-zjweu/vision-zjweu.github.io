@@ -29,29 +29,17 @@ due: 11:59 p.m. on Wednesday January 31st, 2024
 {% capture autograde %}<i class="fa fa-robot icon-large"></i>{% endcapture %}
 {% capture report %}<i class="fa fa-file icon-large"></i>{% endcapture %}
 
-# Homework 1 – Numbers and Images
+#  VSCode 环境
 
 <div class="primer-spec-callout warning" markdown="1">
    
    **Important:** Changes to rubric and submission format announced on Piazza [@58](https://piazza.com/class/lr0rfd6e5dm5wf/post/58){:target="_blank"} .
 
 </div>
-
-## Instructions
-
-
-# VSCode 环境
 
 VSCode 是一个基于图形界面的文本编辑器和开发环境。系里的电脑上已经预装了 VSCode，本地电脑则可以从 VSCode 官网下载安装。安装完成后，我们会将 VSCode 配置为使用我们的虚拟环境。VSCode 是本课程唯一正式支持的 IDE。
 
-*本指南假设你已经在电脑上安装了 conda 并设置好了虚拟环境。*
-
-<div class="primer-spec-callout warning" markdown="1">
-   
-   **Important:** Changes to rubric and submission format announced on Piazza [@58](https://piazza.com/class/lr0rfd6e5dm5wf/post/58){:target="_blank"} .
-
-</div>
-
+*本指南假设你已经在电脑上安装了 anaconda。*
 
 ## 安装Python和Jupyter Notebbok插件
 
