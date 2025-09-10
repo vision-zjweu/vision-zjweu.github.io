@@ -1,9 +1,9 @@
 ---
 layout: spec
-permalink: /envi
+permalink: /hw1
 latex: true
 
-title: VSCode 环境
+title: Homework 1 – Numbers and Images
 due: 11:59 p.m. on Wednesday January 31st, 2024
 ---
 
@@ -28,6 +28,16 @@ due: 11:59 p.m. on Wednesday January 31st, 2024
 {% capture code %}<i class="fa fa-code icon-large"></i>{% endcapture %}
 {% capture autograde %}<i class="fa fa-robot icon-large"></i>{% endcapture %}
 {% capture report %}<i class="fa fa-file icon-large"></i>{% endcapture %}
+
+# Homework 1 – Numbers and Images
+
+<div class="primer-spec-callout warning" markdown="1">
+   
+   **Important:** Changes to rubric and submission format announced on Piazza [@58](https://piazza.com/class/lr0rfd6e5dm5wf/post/58){:target="_blank"} .
+
+</div>
+
+## Instructions
 
 
 # VSCode 环境
