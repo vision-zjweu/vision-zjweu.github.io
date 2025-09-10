@@ -29,7 +29,7 @@ due: 11:59 p.m. on Wednesday January 31st, 2024
 {% capture autograde %}<i class="fa fa-robot icon-large"></i>{% endcapture %}
 {% capture report %}<i class="fa fa-file icon-large"></i>{% endcapture %}
 
-#  VSCode 环境
+#  VSCode Enviroment
 
 <div class="primer-spec-callout warning" markdown="1">
    
