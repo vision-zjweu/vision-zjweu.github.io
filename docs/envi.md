@@ -57,11 +57,7 @@ VSCode 是一个基于图形界面的文本编辑器和开发环境。系里的�
 ![Alt text](assets/envi/jupyter.png "Jupyter")
 
 
-## 在 VSCode 中选择 Python 解释器（Interpreter）
-
-
-
-
+## 在 VSCode 中选择 Python 解释器
 
 当你打开一个 Python 文件时，请查看 VSCode 界面右下角。你会看到 VSCode 已经选择了一个 Python 解释器。
 如果你安装的是anaconda，这里应该显示base（Python 3.X.X），那么就一切就绪，可以开始使用了。
@@ -74,4 +70,8 @@ VSCode 是一个基于图形界面的文本编辑器和开发环境。系里的�
 ![Alt text](assets/envi/interpreter.png "Jupyter")
 
 如果你对使用conda配置python虚拟环境比较有经验，可以自行配置并选择对应解释器。
+
+## 终端 vs 运行按钮
+
+
 # 其他
