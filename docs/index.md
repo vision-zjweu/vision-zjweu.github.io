@@ -9,15 +9,11 @@ layout: spec
 - **教师**: 高松
 
 
-## Homeworks
+## 作业
 - [Homework 1: Numbers and Images](hw1.md)
-- [Homework 2: Convolution and Feature Detection](hw2.md)
-- [Homework 3: Fitting Models and Image Warping](hw3.md)
-- [Homework 4: Machine Learning](hw4.md)
-- [Homework 5: Generative Models](hw5.md)
-- [Homework 6: 3D Vision](hw6.md)
 
-# Schedule
+
+# 日期
 Tentative Schedule, details are subject to change. Refer to [Textbooks]({{ site.url }}/#textbooks) for textbook acronyms in readings.
 
 | Date                  | Topic                                                                                       | Material |
@@ -54,9 +50,9 @@ Tentative Schedule, details are subject to change. Refer to [Textbooks]({{ site.
 | Monday<br>April 22    | **Special Topics**<br> Transformers, Ethics                                                                          | [Slides](https://drive.google.com/file/d/1Pf8plwtdCsZBNBo-ZXoWtl50VSI1Q-fX/view?usp=sharing)   |
 | Saturday<br>April 29  | **Project Report Due**                                                                      | Slides   |
 
-# Syllabus
+# 课程说明
 
-## Prerequisites
+## 先修要求
 
 Concretely, we will assume that you are familiar with the following topics and will not review them in class:
 - **Programming** - Algorithms and Data Structures at the level of EECS 281.
@@ -69,7 +65,7 @@ It would be helpful for you to have a background in these topics. We will provid
 
 Much of computer vision is applying linear algebra to real-world data. If you are unfamiliar with linear algebra or calculus, past experience suggests that you are likely to struggle with the course. If you are rusty, we will provide math refreshers on the necessary topics, however, they are not meant as a first introduction.
 
-## Textbooks
+## 教材
 
 There is no required textbook. Particularly thorny homeworks will often come with lecture notes to help. The following optional books may be useful, and we will provide suggested reading from these books to accompany some lectures:
 - Computer Vision: Algorithms and Applications by Richard Szeliski: [Available for free online here](http://szeliski.org/Book/){:target="_blank"}. (S)
@@ -78,25 +74,24 @@ There is no required textbook. Particularly thorny homeworks will often come wit
 - Multiple View Geometry in Computer Vision (Second Edition), by Richard Hartley and Andrew Zisserman. [Available for free online through the UM Library (login required)](https://ebookcentral.proquest.com/lib/umichigan/detail.action?docID=256634){:target="_blank"}. (H&Z)
 - Linear Algebra review and reference, by Zico Kolter. [Available for free online here](https://www.cs.cmu.edu/~zkolter/course/15-884/linalg-review.pdf){:target="_blank"}. (Kotler)
 
-## Grading
+## 如何给分
 
-Your grade will be based on:
-- **Homework (60%)**: There will be six homeworks over the course of the semester. Each is worth 10%.
-- **Midterm (20%)**: There will be a midterm in-class.
-- **Final Project (20%)**: There will be a final project, in which you work in groups of 3-4 students to produce a substantial course project over the second half of the semester. This will consist of a proposal (worth 2%), and final report and video (worth 18%).
+机器视觉课程:
+- **平时分 (35%)**: 包括出勤，课堂表现，课堂回答问题等。采用扣分制。
+- **编程项目 (65%)**: 由本学习左右小型项目作业组成。
+
+机器视觉实习课:
+- **平时分 (40%)**: 包括出勤，课堂表现，课上项目。
+- **合作项目 (60%)**: 第5周提交项目计划书，第9周和第13周提交进度报告，第17周完成项目答辩和最终报告。
+
+
 
 ## Project Guidelines
 See [here](proj.md) for details.
 
-## Contact Hours
 
-- **Lectures**: There are two sections. The lectures will be recorded and available on zoom. In person lecture attendance is optional.
-- **Discussions**: There are six discussion sections. You are free to attend whichever you would like.
-- **Office Hours**: Office hours are your time to ask questions one-on-one with course staff and get clarification on concepts from the course. We encourage you to go to GSI office hours for implementation questions about the homework and faculty office hours for conceptual questions.
-- **Piazza**: The primary way to communicate with the course staff is through Piazza. The link is on canvas. We will use Piazza to make announcements about the course, such as homework releases or course project details. If you have questions about course concepts, need help with the homework, or have questions about course logistics, please post on Piazza instead of emailing course staff directly. Since Piazza is a shared discussion forum, asking and answering questions there is encouraged. On the other hand, please **do not post homework solutions on Piazza**. If you have questions about a particular piece of code, please make a private post.
-- **Email**: If you need to discuss a sensitive matter that you would prefer not to be shared with the entire course staff, then please email the instructor or your section's GSI/IA directly.
 
-## Course Policies
+## 课程规定
 
 ### Formatting and Submission
 Submissions that do not follow these rules (and any additional ones specified in the homeworks) will get a 0.
@@ -104,20 +99,6 @@ Submissions that do not follow these rules (and any additional ones specified in
 - **Mark answers on Gradescope** - With a few hundred students, graders will not have time to search for answers.
 
 ### Collaboration and External Sources
-- **Automated plagiarism detection**: The vast majority of students are honorable. To ensure that honorable behavior is the incentivized behavior, we will run MOSS on the submitted homework.
-- **Collaboration with students**: You should never know the specific implementation details of anyone else's homework or see their code. Working in teams and giving general advice about outputs or strategies (e.g., ‘‘if the image is really dark when you merge them together, you probably have screwed up the image mask with the number of images’’) is great. However, pair-programming or sitting next to someone else and debugging their code is not allowed.
-- **Consulting outside material**: You can and should turn to other documentation (suggested textbooks, other professors’ lecture notes or slides, documentation from libraries). You may not read a set of code (pseudocode is fine). If you come across code in your search, close the window and don't worry about it.
-- **Things you should never worry about**: Reading the documentation for publicly available libraries; clarifying ambiguities and mistakes in assignments, slides, handouts, textbooks, or documentation; discussion the general material; helping with things like cryptic numpy errors that are not related to class but part of the cost of doing business with a library; discussing the assignments to better understand what's expected and general solution strategies; discussing the starter code; discussing general strategies for writing and debugging code.
-- **Generative AI**: Tools like ChatGPT are strongly discouraged. We know we can't stop you, however, using them will lead to you getting very little hands-on coding ability from this course and you will struggle on the midterm. The libraries used in this course are industry-standard and it is very helpful to be comfortable with them.
-
-### Late Submissions
-Our policy is quite generous. Exceptions will be made in only truly exceptional circumstances by the professor.
-- **Late Days** - **6 total** late days across all homeworks. These will be applied automatically, no need to contact us. Homeworks are due by 11:59:59 on the due date. Thus, the late day would start at 12:00:00.
-- **Penalty** - If you have 0 late days available, any subsequent late submissions will receive a 10% max score reduction per day. For example, if you submit 3 days late, you can receive at most 70% credit.
-- **Late Deadline** - Late submissions will be accepted until a week after the deadline.
-- **Project** - No late submissions. Late days and penalties will not be applied. This will be due as late as we can take them while still delivering grades on time.
-
-### Regrades
-- **Method** - Please submit regrade requests through Gradescope.
-- **Deadline** - Submit regrade requests **within 1 week** of grades being released.
-- **Minor Regrades** - Regrade requests that concern minor judgement calls that change the grade by <= 1 point for a problem or by <= 3 points for the whole homework will not be considered. If you believe this may affect your grade at the end of the semester, contact the professor.
+- **自动化抄袭检测**: 绝大多数学生都是诚实守信的。为了确保诚实的行为成为受到激励的行为，我们将对提交的作业运行自动查重。
+- **和同学合作**: 你绝不应该知道他人作业的具体实现细节，也不应该查看他们的代码。以团队形式合作，以及就输出结果或策略给出一些笼统的建议（例如：‘如果你把图像合并后发现画面非常暗，很可能是你在图像掩码和图像数量上出了问题’）是非常好的。然而，结对编程或与他人并排坐着调试他们的代码是不被允许的。
+- **使用AI**: 我们强烈不鼓励使用诸如 Deepseek 之类的工具。我们知道无法完全阻止你们使用，但依赖它们会使你们在本课程中几乎得不到实际的编程能力训练，并且在期中考试中会遇到很大困难。本课程所使用的库是业界标准，能够熟练掌握它们将对你们非常有帮助。
