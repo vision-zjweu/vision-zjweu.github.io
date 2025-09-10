@@ -31,7 +31,7 @@ layout: spec
 - **Python** - 所有的项目都设计Python编程。
 
 如果你在这些主题上有一定背景会很有帮助。我们会提供相关内容的复习提示，但不会进行全面而系统的讲解：
-- **Array Manipulation 数组操作** - H作业将大量涉及使用 NumPy [NumPy](https://numpy.org/){:target="_blank"} 和 [PyTorch](https://pytorch.org/){:target="_blank"}操作多维数组。事先有一定接触会很有帮助，但如果你从未使用过它们，那么第一次课堂实践会帮助你快速上手。
+- **Array Manipulation 数组操作** - 作业将大量涉及使用 [NumPy](https://numpy.org/){:target="_blank"} 和 [PyTorch](https://pytorch.org/){:target="_blank"}操作多维数组。事先有一定接触会很有帮助，但如果你从未使用过它们，那么第一次课堂实践会帮助你快速上手。
 - **Linear Algebra 线性代数** - 除了基本的矩阵和向量运算之外，你还需要了解叉乘（cross product）、特征向量（eigenvectors）以及奇异值分解（singular value decomposition）。
 - **Calculus 微积分** - 你应该熟练掌握链式法则，并且能够对向量值函数进行偏导数计算。
 
@@ -39,7 +39,7 @@ layout: spec
 
 ## 教材
 
-本课程没有指定的教材。对于特别棘手的作业，我们通常会提供讲义作为帮助。以下几本可选书籍可能会对你有用，我们也会在部分课程中推荐这些书籍的阅读内容：
+本课程没有指定的教材。以下几本可选书籍可能会对你有用，我们也会在部分课程中推荐这些书籍的阅读内容：
 - Computer Vision: Algorithms and Applications by Richard Szeliski: [这里可以获取免费版本](http://szeliski.org/Book/){:target="_blank"}. (S)
 - Deep Learning, by Goodfellow, Bengio, and Courville. [这里可以获取免费版本](https://www.deeplearningbook.org/)
 
