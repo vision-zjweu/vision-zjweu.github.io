@@ -1,6 +1,6 @@
 ---
 layout: spec
-permalink: /hw1
+permalink: /envi
 latex: true
 
 title: Homework 1 – Numbers and Images
