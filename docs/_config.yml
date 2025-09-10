@@ -18,11 +18,11 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: "EECS 442: Computer Vision (Winter 2024)"
+title: "机器视觉 (2025 秋季)"
 
 # URL Settings
-domain: compv.github.io
-url: https://compv.github.io # the base hostname & protocol for your site, e.g. http://example.com
+domain: vision-zjweu.github.io
+url: https://vision-zjweu.github.io # the base hostname & protocol for your site, e.g. http://example.com
 # baseurl: /docs                # the subpath of your site, e.g. /blog
 favicon: favicon.png
 
