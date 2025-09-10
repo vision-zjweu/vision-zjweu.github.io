@@ -4,15 +4,19 @@ layout: spec
 
 <link href="style.css" rel="stylesheet">
 
-# 环境搭建
 
-- [如何在你的电脑上搭建编程环境](envi.md)
 
 
 # 作业
+
+## 环境搭建
+- [设置VS Code](envi.md)
+
+## 实践课
 - [Homework 1: Numbers and Images](hw1.md)
 
-
+## 理论课
+- [Homework 1: Numbers and Images](hw1.md)
 
 # 课程说明
 
