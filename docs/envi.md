@@ -36,6 +36,13 @@ VSCode 是一个基于图形界面的文本编辑器和开发环境。系里的�
 
 *本指南假设你已经在电脑上安装了 conda 并设置好了虚拟环境。*
 
+<div class="primer-spec-callout warning" markdown="1">
+   
+   **Important:** Changes to rubric and submission format announced on Piazza [@58](https://piazza.com/class/lr0rfd6e5dm5wf/post/58){:target="_blank"} .
+
+</div>
+
+
 ## 安装Python和Jupyter Notebbok插件
 
 当你第一次在 VSCode 中打开一个 `Python` 文件时，它会提示你安装 `Python` 扩展，请务必进行安装！
