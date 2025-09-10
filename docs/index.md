@@ -6,29 +6,8 @@ layout: spec
 
 # Overview
 
-- **Instructor**: Jeong Joon Park
-- **GSIs**: 
-	- Alex Janosi
-	- Anurekha Ravikumar
-	- Farzad Siraj
-	- Jinfan Zhou
-	- Shrikant Arvavasu
-- **IA**: 
-	- Yuhang Ning (dlning)
-- **Lecture**: Monday/Wednesday 10:30 AM - 12:00 Noon, STAMPS
-- **Discussions**: 
-	- Monday 12:30-1:30PM, 2166 DOW - Alex
-	- Monday 3:30-4:30PM, 1005 DOW - Anurekha
-	- Wendesday 3:30-4:30PM, 3150 DOW - Farzad
-	- Wednesday 4:30-5:30PM, 3150 DOW - Yuhang [Zoom Link](https://umich.zoom.us/j/3645727237){:target="_blank"}
-	- Wednesday 5:30-6:30PM, 107 GFL - Jinfan
-	- Thursday 3:30-4:30PM, 3150 DOW - Shrikant
-- [**Piazza Signup**](https://piazza.com/umich/winter2024/c9b2){:target="_blank"}
-- [**Lecture Recordings**](https://leccap.engin.umich.edu/leccap/site/rxk3s2yc2cg9pggod0u){:target="_blank"} (It could take a couple of days to be processed and uploaded)
-- [**Course Calendar**](https://calendar.google.com/calendar/u/0?cid=Y18zYjdmOTM1ODhjOTk2NDg0YTM5OTRkMTc1NWIwZWM5MzViZWZlMjgzYzI2ZjA1NjlkNGEzNDE5ZWI5M2ZlZmM1QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20){:target="_blank"}
-- [**Virtual Office Hours**](https://officehours.it.umich.edu/queue/1511){:target="_blank"}
-- Course email: eecs442-wn24@umich.edu
-- Note on Waitlist: We DO NOT reorder waitlist. Please talk to the undergraduate advising office regarding your course enrollment.
+- **教师**: 高松
+
 
 ## Homeworks
 - [Homework 1: Numbers and Images](hw1.md)
