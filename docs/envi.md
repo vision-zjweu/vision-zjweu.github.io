@@ -52,7 +52,12 @@ VSCode 是一个基于图形界面的文本编辑器和开发环境。系里的�
 
 对于Jupyter Notebook，安装 Microsoft 的 `Jupyter` 扩展。 
 
+![Alt text](assets/envi/jupyter.png "Jupyter")
+
 
 ## 在 VSCode 中选择 Python 解释器（Interpreter）
+
+当你打开一个 Python 文件时，请查看 VSCode 界面右下角。你会看到 VSCode 已经选择了一个 Python 解释器。
+如果你安装的是anaconda，这里应该显示base（Python 3.X.X），那么就一切就绪，可以开始使用了。
 
 # 其他
