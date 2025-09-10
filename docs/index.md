@@ -20,21 +20,21 @@ layout: spec
 - **程序设计** - 你应该已经修过C语言的课程。
 - **Python** - 所有的项目都设计Python编程。
 
-It would be helpful for you to have a background in these topics. We will provide refreshers on these topics, but we will not go through a comprehensive treatment:
-- **Array Manipulation** - Homework assignments will extensively involve manipulating multidimensional arrays with [NumPy](https://numpy.org/){:target="_blank"} and [PyTorch](https://pytorch.org/){:target="_blank"}. Some prior exposure will be useful, but if you've never used them before, then the first homework assignment will help you get up to speed.
-- **Linear Algebra** - In addition to basic matrix and vector operations, you will need to know about the cross product, eigenvectors, and singular value decomposition.
-- **Calculus** - You should be comfortable with the chain rule, and taking partial derivatives of vector-valued functions.
+如果你在这些主题上有一定背景会很有帮助。我们会提供相关内容的复习提示，但不会进行全面而系统的讲解：
+- **Array Manipulation 数组操作** - H作业将大量涉及使用 NumPy [NumPy](https://numpy.org/){:target="_blank"} 和 [PyTorch](https://pytorch.org/){:target="_blank"}操作多维数组。事先有一定接触会很有帮助，但如果你从未使用过它们，那么第一次课堂实践会帮助你快速上手。
+- **Linear Algebra 线性代数** - 除了基本的矩阵和向量运算之外，你还需要了解叉乘（cross product）、特征向量（eigenvectors）以及奇异值分解（singular value decomposition）。
+- **Calculus 微积分** - 你应该熟练掌握链式法则，并且能够对向量值函数进行偏导数计算。
 
-Much of computer vision is applying linear algebra to real-world data. If you are unfamiliar with linear algebra or calculus, past experience suggests that you are likely to struggle with the course. If you are rusty, we will provide math refreshers on the necessary topics, however, they are not meant as a first introduction.
+计算机视觉在很大程度上就是将线性代数应用于现实世界的数据。如果你对线性代数或微积分不熟悉，以往的经验表明，你可能会在这门课程中遇到困难。若你只是有些生疏，我们会针对必要的主题提供数学复习，但这些内容并不适合作为入门。
 
 ## 教材
 
-There is no required textbook. Particularly thorny homeworks will often come with lecture notes to help. The following optional books may be useful, and we will provide suggested reading from these books to accompany some lectures:
+本课程没有指定的教材。对于特别棘手的作业，我们通常会提供讲义作为帮助。以下几本可选书籍可能会对你有用，我们也会在部分课程中推荐这些书籍的阅读内容：
 - Computer Vision: Algorithms and Applications by Richard Szeliski: [这里可以获取免费版本](http://szeliski.org/Book/){:target="_blank"}. (S)
 - Computer vision: A Modern Approach (Second Edition), by David Forsyth and Jean Ponce. 
 
 
-## 如何给分
+## 如何评分
 
 机器视觉课程:
 - **平时分 (35%)**: 包括出勤，课堂表现，课堂回答问题等。采用扣分制。
