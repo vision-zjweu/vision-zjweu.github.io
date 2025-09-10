@@ -48,7 +48,8 @@ VSCode 是一个基于图形界面的文本编辑器和开发环境。系里的�
 
 当你第一次在 VSCode 中打开一个 `Python` 文件时，它会提示你安装 `Python` 扩展，请务必进行安装！
 
-我们建议你确保已安装来自 Microsoft 的 `Python` 和 `Pylance` 扩展。
+我们建议你确保已安装来自 Microsoft 的 `Python` 、`Python Debugger` 和 `Pylance` 扩展。
+![Alt text](assets/envi/python.png "Jupyter")
 
 对于Jupyter Notebook，安装 Microsoft 的 `Jupyter` 扩展。 
 
