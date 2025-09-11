@@ -99,5 +99,6 @@ VSCode 是一个基于图形界面的文本编辑器和开发环境。系里的�
 - 停止程序（stop）
 
 ![Alt text](assets/envi/debugger-view.png "Jupyter")
+
 如需更多详细信息，请查看 [VS Code](https://code.visualstudio.com/docs/debugtest/debugging) 的相关页面。
 该页面提供了关于如何进入调试器，以及如何设置和导航断点的说明。
