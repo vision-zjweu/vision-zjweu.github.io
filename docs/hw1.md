@@ -224,7 +224,7 @@ of a row $$y$$ and column $$x$$. This is a not particularly intellectually stimu
 
 
 
-# Tasks Checklist
+# 任务清单
 
 This section is meant to help you keep track of the many tasks you have to complete:
 
@@ -237,7 +237,7 @@ This section is meant to help you keep track of the many tasks you have to compl
   - [ ] 2.4 - {{ report }} 9 images from `mysterydata4.npy`
 
 
-# Canvas Submission Checklist
+# 提交文件清单
 
 In the `zip` file you submit to Canvas, the directory named after your uniqname should include the following files:
 - [ ] `warmups.py`
