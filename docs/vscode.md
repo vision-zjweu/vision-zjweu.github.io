@@ -1,6 +1,6 @@
 ---
 layout: spec
-permalink: /envi
+permalink: /vscode
 latex: true
 
 title: VSCode 环境

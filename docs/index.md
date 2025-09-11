@@ -11,8 +11,8 @@ layout: spec
 
 ## 环境搭建
 
-- [安装`Anaconda`](envi.md)
-- [设置`VS Code`](envi.md)
+- [安装`Anaconda`](conda.md)
+- [设置`VS Code`](vscode.md)
 
 ## 实践课
 - [练习 1: Numpy](hw1.md)
