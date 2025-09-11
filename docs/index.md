@@ -47,7 +47,7 @@ layout: spec
 
 ![Alt text](assets/Szeliski2ndBookFrontCover.png "Jupyter")
 
-- Deep Learning（花书）, by Goodfellow, Bengio, and Courville. [这里可以线上浏览英文版](https://www.deeplearningbook.org/)
+- （花书）Deep Learning, by Goodfellow, Bengio, and Courville. [这里可以线上浏览英文版](https://www.deeplearningbook.org/)
 
 ![Alt text](assets/goodfellow.jpeg "Jupyter"){width=100 height= 120}
 
