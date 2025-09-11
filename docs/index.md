@@ -15,10 +15,11 @@ layout: spec
 - [设置`VS Code`](envi.md)
 
 ## 实践课
-- [Homework 1: Numbers and Images](hw1.md)
+- [练习 1: Numpy](hw1.md)
+- [练习 2: 数据可视化](hw2.md)
 
 ## 理论课
-- [Homework 1: Numbers and Images](hw1.md)
+- [Homework 1: Numbers and Images](hw1en.md)
 
 ## 实践期末项目指导
 
