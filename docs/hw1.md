@@ -235,29 +235,7 @@ This section is meant to help you keep track of the many tasks you have to compl
   - [ ] 2.2 - {{ report }} 2 images from `mysterydata3.npy`
   - [ ] 2.3 - {{ code }}{{ report }} `colorMapArray`
   - [ ] 2.4 - {{ report }} 9 images from `mysterydata4.npy`
-- [ ] **Lights on a Budget**:
-	- [ ] 3.1 Naive Approach
-		- [ ] 1 - {{ code }} `quantize`
-		- [ ] 2 - {{ code }}{{ report }} `quantizeNaive`
-		- [ ] 3 - {{ report }} Quantize Runtime
-		- [ ] 4 - {{ report }} Intensity Values vs Palette Values
-		- [ ] 5 - {{ report }} Two input/output pairs: `aep.jpg` + your choice
-	- [ ] 3.2 Floyd-Steinberg
-		- [ ] 1 - {{ code }} `quantizeFloyd`
-		- [ ] 2 - {{ report }} Why does dithering work?
-		- [ ] 3 - {{ report }} 3 results from `gallery/` including `aep.jpg`
-	- [ ] 3.3 Resizing Images
-		- [ ] 1 - {{ code }}{{ report }} `resizeToSquare`
-	- [ ] 3.4 Handling Color
-		- [ ] 1 - {{ code }}{{ report }} `quantize` (scalar and vector)
-		- [ ] 2 - {{ code }}{{ report }} `quantizeFloyd` (multi-channel)
-		- [ ] 3 - {{ report }} 4 results
-	- [ ] 3.5 Gamma Correction (*optional*)
-- [ ] **Colorspaces**:
-	- [ ] 4.1 - {{ code }}{{ report }} R,G,B plots
-	- [ ] 4.2 - {{ code }}{{ report }} L,A,B plots
-	- [ ] 4.3 - {{ report }} RGB vs LAB
-	- [ ] 4.4 - {{ report }} Two images and their Luminance plots
+
 
 # Canvas Submission Checklist
 
