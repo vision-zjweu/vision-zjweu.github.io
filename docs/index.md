@@ -14,7 +14,7 @@ layout: spec
 - [安装`Anaconda`](conda.md)
 - [设置`VS Code`](vscode.md)
 
-## 实践课
+<!-- ## 实践课
 - [练习 1: Numpy](hw1.md)
 - [练习 2: 数据可视化](hw2.md)
 
@@ -23,7 +23,7 @@ layout: spec
 
 ## 实践期末项目指导
 
-详细说明见 [这里](proj.md)。
+详细说明见 [这里](proj.md)。 -->
 
 # 课程说明
 
