@@ -51,6 +51,24 @@ VSCode 是一个基于图形界面的文本编辑器和开发环境。系里的�
 
 *本指南假设你已经在电脑上安装了 conda 并设置好了虚拟环境。*
 
+## 更换中文显示
+
+完成安装后点击左侧插件扩展按钮
+
+![Alt text](assets/envi/ext.png "Jupyter")
+
+在列表中搜索`chinese`关键字
+
+![Alt text](assets/envi/lang.png "Jupyter")
+
+点击install，安装对应的简体中文扩展。扩展安装完成后，点击`Shift+Ctrl+P`呼出VSCode设置菜单
+
+![Alt text](assets/envi/config.png "Jupyter")
+
+点击`Configure Display Language`，选择中文（简体），VSCode会要求重启程序完成设置。
+
+![Alt text](assets/envi/select.png "Jupyter")
+
 
 ## 安装Python和Jupyter Notebbok插件
 
