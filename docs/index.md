@@ -16,7 +16,7 @@ layout: spec
 
 ## 实践课
 - [0: 环境搭建](conda.md) 上课前请在自己电脑安装好Anaconda、VS Code和腾讯会议
-- Numpy
+- 1: Numpy
 <!-- - [练习 2: 数据可视化](hw2.md) -->
 
 <!-- ## 理论课
