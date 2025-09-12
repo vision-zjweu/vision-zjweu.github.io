@@ -34,9 +34,11 @@ due: 11:59 p.m. on Wednesday January 31st, 2024
 当你对 Python 的工具有疑问时，可以参考 [Python 标准库文档](https://docs.python.org/3.7/library/index.html){:target="_blank"}
 。
 
-我们建议你安装最新的 [Anaconda](https://www.anaconda.com/download/){:target="_blank"} （Python 3.12 版本）。Anaconda 是一个 Python 包管理器，其中已经包含了本课程所需的大部分模块。
+我们建议你安装最新的 [Anaconda](https://www.anaconda.com/download/){:target="_blank"} （Python 3.12 版本）。Anaconda 是一个 Python 包管理器，其中已经包含了本课程所需的大部分Python库。
 
-在本课程中，我们将大量使用以下软件包：
+[Anaconda百度网盘链接](https://pan.baidu.com/s/1JYNiSFtiaCKW3S0v3-xxiw?pwd=uc43)
+
+在本课程中，我们将大量使用以下Python库：
 
  - [Numpy](https://numpy.org/doc/stable/user/quickstart.html){:target="_blank"} 
  - [Matplotlib](https://matplotlib.org/stable/tutorials/introductory/pyplot.html){:target="_blank"} 
@@ -48,6 +50,8 @@ due: 11:59 p.m. on Wednesday January 31st, 2024
 ## 简介
 
 VSCode 是一个基于图形界面的文本编辑器和开发环境。系里的电脑上已经预装了 VSCode，本地电脑则可以从 VSCode 官网下载安装。安装完成后，我们会将 VSCode 配置为使用我们的虚拟环境。VSCode 是本课程唯一正式支持的 IDE。
+
+[VSCode百度网盘链接](https://pan.baidu.com/s/1JYNiSFtiaCKW3S0v3-xxiw?pwd=uc43)
 
 *本指南假设你已经在电脑上安装了 conda 并设置好了虚拟环境。*
 
