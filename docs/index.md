@@ -7,20 +7,20 @@ layout: spec
 
 
 
-# 编程projects
+# 编程项目
 
-## 环境搭建
+<!-- ## 环境搭建
 
 - [安装`Anaconda`](conda.md)
-- [设置`VS Code`](vscode.md)
+- [设置`VS Code`](vscode.md) -->
 
-<!-- ## 实践课
-- [练习 1: Numpy](hw1.md)
-- [练习 2: 数据可视化](hw2.md)
+## 实践课
+- [1: 环境搭建](conda.md)
+<!-- - [练习 2: 数据可视化](hw2.md) -->
 
-## 理论课
-- [Homework 1: Numbers and Images](hw1en.md)
-
+<!-- ## 理论课
+- [Homework 1: Numbers and Images](hw1en.md) -->
+<!-- 
 ## 实践期末项目指导
 
 详细说明见 [这里](proj.md)。 -->
