@@ -15,7 +15,8 @@ layout: spec
 - [设置`VS Code`](vscode.md) -->
 
 ## 实践课
-- [1: 环境搭建](conda.md)
+- [0: 环境搭建](conda.md)
+- Numpy
 <!-- - [练习 2: 数据可视化](hw2.md) -->
 
 <!-- ## 理论课
