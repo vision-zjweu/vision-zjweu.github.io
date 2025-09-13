@@ -54,11 +54,9 @@ layout: spec
 本课程没有指定的教材。以下几本可选书籍可能会对你有用，我们也会在部分课程中推荐这些书籍的阅读内容：
 - Computer Vision: Algorithms and Applications by Richard Szeliski: [这里可以获取免费版本](http://szeliski.org/Book/){:target="_blank"}. (S)
 
-![Alt text](assets/Szeliski2ndBookFrontCover.png "Jupyter")
+<img src="assets/Szeliski2ndBookFrontCover.png" alt="drawing" width="300"/>
 
 - （花书）Deep Learning, by Goodfellow, Bengio, and Courville. [这里可以线上浏览英文版](https://www.deeplearningbook.org/)
-
-<!-- ![Alt text](assets/goodfellow.jpeg "Jupyter"){width=100 height= 120} -->
 
 <img src="assets/goodfellow.jpeg" alt="drawing" width="300"/>
 
