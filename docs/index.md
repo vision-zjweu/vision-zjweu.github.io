@@ -66,7 +66,6 @@ layout: spec
 			<img src="{{site.url}}/assets/goodfellow.jpeg" alt="goodfellow" width="90px">
 		</figure>
 	</div>
-	<figcaption>Figure 2: The Mystery Data, Visualized with the Plasma Colormap</figcaption>
 </figure>
 
 ## 如何评分
