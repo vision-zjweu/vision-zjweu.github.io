@@ -58,7 +58,10 @@ layout: spec
 
 - （花书）Deep Learning, by Goodfellow, Bengio, and Courville. [这里可以线上浏览英文版](https://www.deeplearningbook.org/)
 
-![Alt text](assets/goodfellow.jpeg "Jupyter"){width=100 height= 120}
+<!-- ![Alt text](assets/goodfellow.jpeg "Jupyter"){width=100 height= 120} -->
+
+<img src="assets/goodfellow.jpeg" alt="drawing" width="200"/>
+
 
 <figure class="figure-container">
 	<div class="flex-container">
