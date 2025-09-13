@@ -60,6 +60,15 @@ layout: spec
 
 ![Alt text](assets/goodfellow.jpeg "Jupyter"){width=100 height= 120}
 
+<figure class="figure-container">
+	<div class="flex-container">
+		<figure>
+			<img src="{{site.url}}/assets/hw1/goodfellow.jpeg" alt="goodfellow" width="90px">
+		</figure>
+	</div>
+	<figcaption>Figure 2: The Mystery Data, Visualized with the Plasma Colormap</figcaption>
+</figure>
+
 ## 如何评分
 
 机器视觉课程:
