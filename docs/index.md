@@ -63,7 +63,7 @@ layout: spec
 <figure class="figure-container">
 	<div class="flex-container">
 		<figure>
-			<img src="{{site.url}}/assets/hw1/goodfellow.jpeg" alt="goodfellow" width="90px">
+			<img src="{{site.url}}/assets/goodfellow.jpeg" alt="goodfellow" width="90px">
 		</figure>
 	</div>
 	<figcaption>Figure 2: The Mystery Data, Visualized with the Plasma Colormap</figcaption>
