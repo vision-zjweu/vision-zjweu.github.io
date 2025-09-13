@@ -63,7 +63,7 @@ layout: spec
 <figure class="figure-container">
 	<div class="flex-container">
 		<figure>
-			<img src="{{site.url}}/assets/goodfellow.jpeg" alt="goodfellow" width="90px">
+			<img src="{{site.url}}/assets/goodfellow.jpeg" alt="goodfellow" width="300px">
 		</figure>
 	</div>
 </figure>
