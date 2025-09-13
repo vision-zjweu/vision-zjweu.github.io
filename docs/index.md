@@ -60,16 +60,9 @@ layout: spec
 
 <!-- ![Alt text](assets/goodfellow.jpeg "Jupyter"){width=100 height= 120} -->
 
-<img src="assets/goodfellow.jpeg" alt="drawing" width="200"/>
+<img src="assets/goodfellow.jpeg" alt="drawing" width="300"/>
 
 
-<figure class="figure-container">
-	<div class="flex-container">
-		<figure>
-			<img src="{{site.url}}/assets/goodfellow.jpeg" alt="goodfellow" width="300px">
-		</figure>
-	</div>
-</figure>
 
 ## 如何评分
 
