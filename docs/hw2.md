@@ -312,7 +312,7 @@ what to do about results that are undefined. If the results are undefined, then 
 </div>
 
 
-# Tasks Checklist
+# 任务清单
 
 本节旨在帮助你理清并跟踪需要完成的各项任务：  
 
@@ -325,7 +325,7 @@ what to do about results that are undefined. If the results are undefined, then 
   - [ ] 4 - {{ code }} 9 images from `mysterydata4.npy`
 
 
-# Submission Checklist
+# 提交清单
 
 学习通里提交文件清单:
 - [ ] `你的学号.ipynb`
