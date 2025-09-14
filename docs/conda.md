@@ -147,9 +147,7 @@ jupyter nbconvert --to webpdf filtering.ipynb
 
 注意，webpdf生成需要`playwright`库，并安装`chronium`
 
-```bash
-pip install playwright
-```
+
 
 安装`playwright`库
 ```bash
@@ -159,4 +157,4 @@ pip install playwright
 安装`chromium`
 ```bash
 playwright install chromium
-```bash
+```
