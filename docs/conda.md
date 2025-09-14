@@ -133,7 +133,9 @@ VSCode 是一个基于图形界面的文本编辑器和开发环境。系里的�
 如需更多详细信息，请查看 [VS Code](https://code.visualstudio.com/docs/debugtest/debugging) 的相关页面。
 该页面提供了关于如何进入调试器，以及如何设置和导航断点的说明。
 
-# Jupyter Notebook 转换成 PDF 文件
+# 其他
+
+## Jupyter Notebook 转换成 PDF 文件
 
 在终端输入`jupyter nbconvert --to webpdf + 你的文件名.ipynb`或者在Jupyter notebook 代码行输入 `!`后接上述命令
 
@@ -159,7 +161,7 @@ pip install playwright
 playwright install chromium
 ```
 
-# Windows only: 集成 'Anaconda Prompt' 到终端
+## Windows only: 集成 'Anaconda Prompt' 到终端
 
 
 在课程的大部分内容中，所需环境现已配置完成。  
