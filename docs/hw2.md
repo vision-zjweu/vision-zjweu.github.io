@@ -84,17 +84,21 @@ The assignment has four parts and corresponding folders in the starter code:
 
 <figure class="figure-container">
 	<div class="flex-container">
-		{% for i in (0..8) %}
+		<!-- {% for i in (0..8) %} -->
 		<figure>
-			<img src="{{site.url}}/assets/hw1/visualizeFig/vis_{{i}}.png" alt="vis_{{i}}" width="90px">
-			<figcaption>vis_{{i}}.png</figcaption>
+			<img src="{{site.url}}/assets/hw1/dog-1.jpg" alt="vis_{{i}}" width="90px">
+			<figcaption>输入图片1</figcaption>
 		</figure>
-		{% endfor %}
+				<figure>
+			<img src="{{site.url}}/assets/hw1/dog-2.jpg" alt="vis_{{i}}" width="90px">
+			<figcaption>失败案例 </figcaption>
+		</figure>
+		<!-- {% endfor %} -->
 	</div>
-	<figcaption>Figure 1: The Mystery Data</figcaption>
+	<figcaption>图 1: (a) 由我们的赞助商提供的一张宠物照片。  (b) 简单边缘检测器的一个失败案例。  这些图像已在起始代码中提供。  </figcaption>
 </figure>
 
-<figure class="figure-container">
+<!-- <figure class="figure-container">
 	<div class="flex-container">
 		{% for i in (0..8) %}
 		<figure>
@@ -104,7 +108,7 @@ The assignment has four parts and corresponding folders in the starter code:
 		{% endfor %}
 	</div>
 	<figcaption>Figure 2: The Mystery Data, Visualized with the Plasma Colormap</figcaption>
-</figure>
+</figure> -->
 
 我们的合作伙伴 **Petsco** 认为，计算机视觉可以帮助他们在与长期竞争对手 **Petsmart™** 的较量中取得优势。  为了避免采用目前行业内普遍的做法——逐一手工标注猫狗图像中的边缘——他们希望我们能够提供一种自动化的解决方案。
 
