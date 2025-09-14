@@ -87,7 +87,6 @@ The assignment has four parts and corresponding folders in the starter code:
 
 <figure class="figure-container">
 	<div class="flex-container">
-		<!-- {% for i in (0..8) %} -->
 		<figure>
 			<img src="{{site.url}}/assets/hw1/dog-1.jpg" alt="vis_{{i}}" width="90px">
 			<figcaption>输入图片1</figcaption>
@@ -96,7 +95,6 @@ The assignment has four parts and corresponding folders in the starter code:
 			<img src="{{site.url}}/assets/hw1/dog-2.jpg" alt="vis_{{i}}" width="90px">
 			<figcaption>失败案例 </figcaption>
 		</figure>
-		<!-- {% endfor %} -->
 	</div>
 	<figcaption>图 1: (a) 由我们的赞助商提供的一张宠物照片。  (b) 简单边缘检测器的一个失败案例。  这些图像已在起始代码中提供。  </figcaption>
 </figure>
