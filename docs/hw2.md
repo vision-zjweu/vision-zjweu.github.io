@@ -92,7 +92,9 @@ The assignment has four parts and corresponding folders in the starter code:
 	<figcaption>图 1: (a) 由Pestco提供的一张宠物照片。  (b) 简单边缘检测器的一个失败案例。  这些图像已在起始代码中提供。  </figcaption>
 </figure>
 
-### 1 卷积函数
+### 1 卷积
+
+*(25 points)* 
 	
 对提供的宠物图片应用水平与垂直梯度滤波器 $$[1 -1]$$ 和 $$[1 − 1]^T$$，分别得到滤波响应 $$I_x$$ 与 $$I_y$$。 <span class="code">请编写函数 `convolve(im, h)`，其输入为灰度图像与二维滤波器，输出为两者的卷积结果</span>。请不要使用诸如 `scipy` 中的“黑箱”滤波函数（例如现成的卷积/相关 API）。你可以使用 `numpy.dot`（并非必须）；更建议将卷积实现为**嵌套的 for 循环**。随后按示例代码计算边缘强度，并可视化 $$I_x$$、$$I_y$$ 以及边缘强度图。边缘强度建议按 $$I_x^2 + I_y^2$$ 计算。  
 
@@ -101,6 +103,8 @@ The assignment has four parts and corresponding folders in the starter code:
 需要注意，这种简单的滤波方法会有相当高的**错误率**——既会遗漏真实的物体边界，也会错误地检测出伪边缘。幸运的是，**Petsco** 团队将志愿对这些错误进行人工修正（4 分）。
 
 ### 2 高斯滤波
+
+*(15 points)* 
 
 尽管你提交的边缘检测器在某些宠物上表现良好，但工程师们报告了大量失败案例，这让 Petsco 的高管非常不满。更令人担忧的是，它在处理毛发蓬松的狗（例如 “doodle” 杂交犬）时经常失效 —— 这是对我们的赞助商而言极具商业价值的市场（见图 1b）。  
 
@@ -124,9 +128,14 @@ Petsco 的团队认为，这一错误的根源在于：梯度滤波器常常会�
 
 ### 3 过滤器改进
 
+*(15 points)* 
+
+
 与其先对图像进行两次卷积来计算 $$I_x$$（即先用高斯模糊滤波器，再用梯度滤波器），不如创建一个单一的滤波器 $$G_x$$，其输出应与两次卷积的结果相同。你可以复用 （2） 部分中的函数。请使用提供的代码对该滤波器进行可视化。（2 分）  
 
 ### 4 可旋转滤波器
+
+*(15 points)* 
 
  好消息！Petsco 的高管们对你的工作非常满意，并已决定为后续的若干作业继续提供资助。  
 然而，在我们最近的一次会议上，他们又提出了新的要求：Petsco 的竞争对手 Petsmart 现在已经能够计算宠物图像中的**有方向性的边缘**。  
@@ -139,7 +148,29 @@ Petsco 认为，通过利用本课程中关于**可旋转滤波器（steerable f
 
 请按照题目 1 中对梯度的可视化方式展示这些结果。（2 分）  
 
+### 5 噪声消除
 
+*(30 points)* 
+
+
+Petsco 还希望能够提供**提升低质量宠物照片**的功能。  
+给定一张带噪声的宠物图像，请使用你在 (c) 部分中开发的**方框滤波器**和**高斯滤波器**去除噪声。  
+
+随后，请实现一个函数 `median(im, k)`，利用 \(k \times k\) 的窗口进行中值滤波。  
+具体来说，对于噪声图像中的每一个像素，你需要计算其邻域内 \(k \times k\) 窗口中其他像素的**中值强度值**。  
+
+你的代码应与 `convolve` 的实现非常相似，但在内部循环中，不再计算加权平均，而是计算**中值**。  
+你可以使用内置函数（例如 `np.median`）来计算列表或数组的中值。  
+
+请包含 \(k = 3\) 和 \(k = 7\) 两种情况的实验结果。  
+
+你的解答应展示以下 5 张图像：  
+(i) 含噪声的原始图像；  
+(ii) 经过方框滤波的含噪声图像；  
+(iii) 经过高斯滤波的含噪声图像；  
+(iv) 使用 \(k = 3\) 的中值滤波结果；  
+(v) 使用 \(k = 7\) 的中值滤波结果。  
+（3 分）
 
 Throughout the course, a lot of the data you have access to will be in the form of an image. These won't be stored and saved in the same format that you're used to when interacting with ordinary images, such as off your cell phone: sometimes they'll have negative values, really really big values, or invalid values. If you can look at images quickly, then you'll find bugs quicker. If you **only** print debug, you'll have a bad time. To teach you about interpreting things, I've got a bunch of mystery data that we'll analyze together. You'll write a brief version of the important `imsave` function for visualizing.
 
