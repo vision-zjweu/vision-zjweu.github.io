@@ -108,6 +108,8 @@ The assignment has four parts and corresponding folders in the starter code:
 
 我们的合作伙伴 **Petsco** 认为，计算机视觉可以帮助他们在与长期竞争对手 **Petsmart™** 的较量中取得优势。  为了避免采用目前行业内普遍的做法——逐一手工标注猫狗图像中的边缘——他们希望我们能够提供一种自动化的解决方案。
 
+1. (a) 对提供的宠物图像应用水平和垂直梯度滤波器 $$[1 -1]$$ 和 $$[1 − 1]^⊤$$，得到滤波响应 `Ix` 和 `Iy`。  
+请编写一个函数 `convolve(im, h)` 来实现卷积操作。  
 
 Throughout the course, a lot of the data you have access to will be in the form of an image. These won't be stored and saved in the same format that you're used to when interacting with ordinary images, such as off your cell phone: sometimes they'll have negative values, really really big values, or invalid values. If you can look at images quickly, then you'll find bugs quicker. If you **only** print debug, you'll have a bad time. To teach you about interpreting things, I've got a bunch of mystery data that we'll analyze together. You'll write a brief version of the important `imsave` function for visualizing.
 
