@@ -192,3 +192,11 @@ playwright install chromium
    }
 }
 ```
+
+如果你愿意，也可以将 **Miniforge Prompt** 设置为 VSCode 的默认终端。  
+请注意，这一操作会作为 VSCode 的**全局设置**生效。  
+
+操作方法：  
+1. 打开设置（快捷键 `CTRL+,`）；  
+2. 搜索 `terminal.integrated.defaultProfile.windows`；  
+3. 选择你想要设为默认的终端配置即可。  
