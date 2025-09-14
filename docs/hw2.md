@@ -314,43 +314,20 @@ what to do about results that are undefined. If the results are undefined, then 
 
 # Tasks Checklist
 
-This section is meant to help you keep track of the many tasks you have to complete:
+本节旨在帮助你理清并跟踪需要完成的各项任务：  
 
-- [ ] **NumPy Intro**:
-  - [ ] 1.1 - {{ report }} Terminal Output
-- [ ] **Data Interpretation and Visualization**:
-  - [ ] 2.1 - {{ report }} 2 images from `mysterydata2.npy`
-  - [ ] 2.2 - {{ report }} 2 images from `mysterydata3.npy`
-  - [ ] 2.3 - {{ code }}{{ report }} `colorMapArray`
-  - [ ] 2.4 - {{ report }} 9 images from `mysterydata4.npy`
-- [ ] **Lights on a Budget**:
-	- [ ] 3.1 Naive Approach
-		- [ ] 1 - {{ code }} `quantize`
-		- [ ] 2 - {{ code }}{{ report }} `quantizeNaive`
-		- [ ] 3 - {{ report }} Quantize Runtime
-		- [ ] 4 - {{ report }} Intensity Values vs Palette Values
-		- [ ] 5 - {{ report }} Two input/output pairs: `aep.jpg` + your choice
-	- [ ] 3.2 Floyd-Steinberg
-		- [ ] 1 - {{ code }} `quantizeFloyd`
-		- [ ] 2 - {{ report }} Why does dithering work?
-		- [ ] 3 - {{ report }} 3 results from `gallery/` including `aep.jpg`
-	- [ ] 3.3 Resizing Images
-		- [ ] 1 - {{ code }}{{ report }} `resizeToSquare`
-	- [ ] 3.4 Handling Color
-		- [ ] 1 - {{ code }}{{ report }} `quantize` (scalar and vector)
-		- [ ] 2 - {{ code }}{{ report }} `quantizeFloyd` (multi-channel)
-		- [ ] 3 - {{ report }} 4 results
-	- [ ] 3.5 Gamma Correction (*optional*)
-- [ ] **Colorspaces**:
-	- [ ] 4.1 - {{ code }}{{ report }} R,G,B plots
-	- [ ] 4.2 - {{ code }}{{ report }} L,A,B plots
-	- [ ] 4.3 - {{ report }} RGB vs LAB
-	- [ ] 4.4 - {{ report }} Two images and their Luminance plots
 
-# Canvas Submission Checklist
+- [ ] **Pet edge detection**:
+  - [ ] 1 - {{ code }} 2 images from `mysterydata2.npy`
+  - [ ] 2 - {{ code }} 2 images from `mysterydata3.npy`
+  - [ ] 3 - {{ code }}  `colorMapArray`
+  - [ ] 4 - {{ code }} 9 images from `mysterydata4.npy`
+  - [ ] 4 - {{ code }} 9 images from `mysterydata4.npy`
 
-In the `zip` file you submit to Canvas, the directory named after your uniqname should include the following files:
-- [ ] `warmups.py`
-- [ ] `tests.py`
-- [ ] `dither.py`
-- [ ] `mystery_visualize.py`
+
+# Submission Checklist
+
+学习通里提交文件清单:
+- [ ] `你的学号.ipynb`
+- [ ] `你的学号.pdf`
+
