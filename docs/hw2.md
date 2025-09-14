@@ -89,7 +89,7 @@ The assignment has four parts and corresponding folders in the starter code:
 	<div class="flex-container">
 		<figure>
 			<img src="{{site.url}}/assets/hw1/dog-1.jpg" alt="vis_{{i}}" width="300px">
-			<figcaption>输入图片1</figcaption>
+			<figcaption>一张输入图片</figcaption>
 		</figure>
 				<figure>
 			<img src="{{site.url}}/assets/hw1/dog-2.jpg" alt="vis_{{i}}" width="300px">
@@ -109,7 +109,7 @@ The assignment has four parts and corresponding folders in the starter code:
 
 
 
-1. 对提供的宠物图片应用水平与垂直梯度滤波器 `$$[1 -1]$$` 和 `$$[1 − 1]^T$$`，分别得到滤波响应 `I_x` 与 `I_y`。{{ report }} <span class="code">请编写函数 `convolve(im, h)`，其输入为灰度图像与二维滤波器，输出为两者的卷积结果</span>。请不要使用诸如 `scipy` 中的“黑箱”滤波函数（例如现成的卷积/相关 API）。你可以使用 `numpy.dot`（并非必须）；更建议将卷积实现为**嵌套的 for 循环**。随后按示例代码计算边缘强度，并可视化 `I_x`、`I_y` 以及边缘强度图。边缘强度建议按 $$I_x^2 + I_y^2$$ 计算。  
+1. 对提供的宠物图片应用水平与垂直梯度滤波器 $$[1 -1]$$ 和 $$[1 − 1]^T$$，分别得到滤波响应 $$I_x$$ 与 $$I_y$$。 <span class="code">请编写函数 `convolve(im, h)`，其输入为灰度图像与二维滤波器，输出为两者的卷积结果</span>。请不要使用诸如 `scipy` 中的“黑箱”滤波函数（例如现成的卷积/相关 API）。你可以使用 `numpy.dot`（并非必须）；更建议将卷积实现为**嵌套的 for 循环**。随后按示例代码计算边缘强度，并可视化 $$I_x$$、$$I_y$$ 以及边缘强度图。边缘强度建议按 $$I_x^2 + I_y^2$$ 计算。  
 
 	函数返回的滤波响应应与输入图像具有**相同尺寸**。请使用**零填充**（zero padding），即假设越界的图像像素为 0。并且务必实现的是**卷积（convolution）**，而不是**互相关（cross-correlation）**（提示：卷积需要对滤波核进行翻转）。
 
@@ -117,6 +117,9 @@ The assignment has four parts and corresponding folders in the starter code:
 
 
 
+2. 尽管你提交的边缘检测器在某些宠物上表现良好，但工程师们报告了大量失败案例，这让 Petsco 的高管非常不满。更令人担忧的是，它在处理毛发蓬松的狗（例如 “doodle” 杂交犬）时经常失效 —— 这是对我们的赞助商而言极具商业价值的市场（见图 1b）。  
+
+	Petsco 的团队认为，这一错误的根源在于：梯度滤波器常常会在高度纹理化区域触发许多微小而虚假的边缘响应。  
 
 
 Throughout the course, a lot of the data you have access to will be in the form of an image. These won't be stored and saved in the same format that you're used to when interacting with ordinary images, such as off your cell phone: sometimes they'll have negative values, really really big values, or invalid values. If you can look at images quickly, then you'll find bugs quicker. If you **only** print debug, you'll have a bad time. To teach you about interpreting things, I've got a bunch of mystery data that we'll analyze together. You'll write a brief version of the important `imsave` function for visualizing.
