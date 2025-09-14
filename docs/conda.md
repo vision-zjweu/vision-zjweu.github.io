@@ -184,8 +184,8 @@ playwright install chromium
          "icon": "terminal-powershell"
       },
       "CV 2025": {
-         "path": "${env:windir}\\\System32\\cmd.exe",
-         "args": ["/K","${env:USERPROFILE}\\anaconda3\\Scripts\\activate.bat","base"]
+         "path": "${env:windir}\\\System32}\\\cmd.exe",
+         "args": ["/K","${env:USERPROFILE}\\\anaconda3}\\\Scripts}\\\activate.bat","base"]
       },
       "Another Shell": {
       [...]
