@@ -82,11 +82,11 @@ The assignment has four parts and corresponding folders in the starter code:
 	<div class="flex-container">
 		<figure>
 			<img src="{{site.url}}/assets/hw1/dog-1.jpg" alt="vis_{{i}}" width="300px">
-			<figcaption>一张输入图片</figcaption>
+			<figcaption>(a) 一张输入图片</figcaption>
 		</figure>
 				<figure>
 			<img src="{{site.url}}/assets/hw1/dog-2.jpg" alt="vis_{{i}}" width="300px">
-			<figcaption>失败案例 </figcaption>
+			<figcaption>(b) 失败案例 </figcaption>
 		</figure>
 	</div>
 	<figcaption>图 1: (a) 由Pestco提供的一张宠物照片。  (b) 简单边缘检测器的一个失败案例。  这些图像已在起始代码中提供。  </figcaption>
