@@ -56,20 +56,13 @@ The submission includes two parts:
 
 2. **To Gradescope**: submit a `pdf` file as your write-up, including your answers to all the questions and key choices you made.
 
-   {{ report }} -
-   <span class="report">We have indicated questions where you have to do something in the report in green. **Some coding questions also need to be included in the report.**</span>
-
-   The write-up must be an electronic version. **No handwriting, including plotting questions.** $$\LaTeX$$ is recommended but not mandatory.
-
-   For including code, **do not use screenshots**. Generate a PDF using a [tool like this](https://www.i2pdf.com/source-code-to-pdf){:target="_blank"} or using this [Overleaf LaTeX template](https://www.overleaf.com/read/wbpyympmgfkf#bac472){:target="_blank"}. If this PDF contains only code, be sure to append it to the end of your report and match the questions carefully on Gradescope.
-
 
 ## Overview
 
 In this assignment, you’ll work through three tasks that help set you up for success in the class as well as a short assignment involving playing with color. The assignment has three goals.
 
 1. **Show you bugs in a low-stakes setting**. You’ll encounter a lot of programming mistakes in the course and we want to show you common bugs early on. Here, the programming problems are deliberately easy!
-2. **Learn to write reasonably good Python and NumPy code**. Having layers of nested `for` loops will cause bugs and is not feasible for us to debug, use NumPy effectively! If you have not had any experience with NumPy, read this [tutorial](http://cs231n.github.io/python-numpy-tutorial/){:target="_blank"} before starting.
+2. **Learn to write reasonably good Python and NumPy code**. Having layers of nested `for` loops will cause bugs and is not feasible for us to debug, use NumPy effectively! 
 
 The assignment has four parts and corresponding folders in the starter code:
 
@@ -121,6 +114,9 @@ The assignment has four parts and corresponding folders in the starter code:
 
 	Petsco 的团队认为，这一错误的根源在于：梯度滤波器常常会在高度纹理化区域触发许多微小而虚假的边缘响应。  
 
+	请友善地解决此问题：创建一种**仅对较大空间尺度的边缘**作出响应的边缘检测器。为此，请在计算梯度之前，先使用**高斯滤波（Gaussian filter）**对图像进行模糊/平滑处理。请**自行实现**你的高斯滤波器^4。请不要使用任何“黑箱”式的高斯滤波函数（例如 `scipy.ndimage.gaussian_filter`）。
+
+	在对图像应用高斯滤波和梯度滤波时，请使用**黑箱卷积函数** `scipy.ndimage.convolve`，而不是你手写的卷积实现。
 
 Throughout the course, a lot of the data you have access to will be in the form of an image. These won't be stored and saved in the same format that you're used to when interacting with ordinary images, such as off your cell phone: sometimes they'll have negative values, really really big values, or invalid values. If you can look at images quickly, then you'll find bugs quicker. If you **only** print debug, you'll have a bad time. To teach you about interpreting things, I've got a bunch of mystery data that we'll analyze together. You'll write a brief version of the important `imsave` function for visualizing.
 
