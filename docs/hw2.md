@@ -37,9 +37,9 @@ due: 11:59 p.m. on Wednesday January 31st, 2024
 
 </div> -->
 
-## Instructions
+## 说明
 
-This homework is **due at {{ page.due }}**.
+项目截止时间 **{{ page.due }}**.
 
 <!-- The submission includes two parts:
 
@@ -348,12 +348,12 @@ what to do about results that are undefined. If the results are undefined, then 
 本节旨在帮助你理清并跟踪需要完成的各项任务：  
 
 
-- [ ] **Pet edge detection**:
-  - [ ] 1 - {{ code }} 2 images from `mysterydata2.npy`
-  - [ ] 2 - {{ code }} 2 images from `mysterydata3.npy`
-  - [ ] 3 - {{ code }}  `colorMapArray`
-  - [ ] 4 - {{ code }} 9 images from `mysterydata4.npy`
-  - [ ] 4 - {{ code }} 9 images from `mysterydata4.npy`
+- [ ] **宠物图像边缘检测**:
+  - [ ] 1 - {{ code }} 卷积
+  - [ ] 2 - {{ code }} 高斯滤波器
+  - [ ] 3 - {{ code }} 过滤器改进
+  - [ ] 4 - {{ code }} 可旋转滤波器
+  - [ ] 4 - {{ code }} 噪声消除
 
 
 # 提交清单
