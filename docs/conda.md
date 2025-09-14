@@ -51,6 +51,23 @@ Conda 是由 Anaconda, Inc. 开发的包与环境管理工具，它可以在一�
 
 当你对 Python 的工具有疑问时，可以参考 [Python 标准库文档](https://docs.python.org/3.7/library/index.html){:target="_blank"}。
 
+##  Python 环境
+
+本课程使用Anaconda安装后默认环境`base`，如果你对python环境比较熟悉，可以自行配置新的环境。
+
+对于python环境，常用的conda 命令：
+
+```bash
+conda env create  -n  cv2025 #建立新的环境(例：cv2025)
+
+conda env create -f environment.yml -n cv2025 #根据环境yml配置文件建立新的环境(例：cv2025)
+
+conda activate cv2025 #激活环境
+
+conda deactivate  #关闭环境
+```
+
+
 # VSCode 环境
 
 ## 简介
