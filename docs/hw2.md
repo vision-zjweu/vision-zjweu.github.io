@@ -3,7 +3,7 @@ layout: spec
 permalink: /hw2
 latex: true
 
-title: 项目1: Filtering
+title: Homework 1 – Numbers and Images
 due: 11:59 p.m. on Wednesday January 31st, 2024
 ---
 
