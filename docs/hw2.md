@@ -108,8 +108,7 @@ The assignment has four parts and corresponding folders in the starter code:
 
 我们的合作伙伴 **Petsco** 认为，计算机视觉可以帮助他们在与长期竞争对手 **Petsmart™** 的较量中取得优势。  为了避免采用目前行业内普遍的做法——逐一手工标注猫狗图像中的边缘——他们希望我们能够提供一种自动化的解决方案。
 
-1. (a) 对提供的宠物图像应用水平和垂直梯度滤波器 $$[1 -1]$$ 和 $$[1 − 1]^⊤$$，得到滤波响应 `Ix` 和 `Iy`。  
-请编写一个函数 `convolve(im, h)` 来实现卷积操作。  
+- (a) 对提供的宠物图片应用水平与垂直梯度滤波器 `[1 -1]` 和 `[1 − 1]⊤`，分别得到滤波响应 `I_x` 与 `I_y`。请编写函数 `convolve(im, h)`，其输入为灰度图像与二维滤波器，输出为两者的卷积结果。请不要使用诸如 `scipy` 中的“黑箱”滤波函数（例如现成的卷积/相关 API）。你可以使用 `numpy.dot`（并非必须）；更建议将卷积实现为**嵌套的 for 循环**。随后按示例代码计算边缘强度，并可视化 `I_x`、`I_y` 以及边缘强度图。边缘强度建议按 \(I_x^2 + I_y^2\) 计算。  
 
 Throughout the course, a lot of the data you have access to will be in the form of an image. These won't be stored and saved in the same format that you're used to when interacting with ordinary images, such as off your cell phone: sometimes they'll have negative values, really really big values, or invalid values. If you can look at images quickly, then you'll find bugs quicker. If you **only** print debug, you'll have a bad time. To teach you about interpreting things, I've got a bunch of mystery data that we'll analyze together. You'll write a brief version of the important `imsave` function for visualizing.
 
