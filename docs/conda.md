@@ -173,7 +173,7 @@ playwright install chromium
 
 打开 `settings.json` 后，你会看到类似如下的 JSON 配置。  
 我们的任务是为 **Anacondsa Prompt** 添加一个条目，甚至可以让它自动激活 `base` 环境。  
-下面我们已经提供了一个示例条目，名称为 **"CV 2025"**。  
+下面我们已经提供了一个示例条目，名称为 **"cv2025"**。  
 
 ```
 {
@@ -183,9 +183,9 @@ playwright install chromium
          "source": "PowerShell",
          "icon": "terminal-powershell"
       },
-      "Miniforge CSCI 1430": {
+      "CV 2025": {
          "path": "${env:windir}\\System32\\cmd.exe",
-         "args": ["/K","${env:USERPROFILE}\\miniforge3\\Scripts\\activate.bat","csci1430"]
+         "args": ["/K","${env:USERPROFILE}\\anaconda3\\Scripts\\activate.bat","cv2025"]
       },
       "Another Shell": {
       [...]
