@@ -96,7 +96,7 @@ The assignment has four parts and corresponding folders in the starter code:
 			<figcaption>失败案例 </figcaption>
 		</figure>
 	</div>
-	<figcaption>图 1: (a) 由我们的赞助商提供的一张宠物照片。  (b) 简单边缘检测器的一个失败案例。  这些图像已在起始代码中提供。  </figcaption>
+	<figcaption>图 1: (a) 由Pestco提供的一张宠物照片。  (b) 简单边缘检测器的一个失败案例。  这些图像已在起始代码中提供。  </figcaption>
 </figure>
 
 1. *(2 points)* Try loading `mysterydata2.npy` and visualizing it. You should get something like Figure 3. It's hard to see stuff because one spot is _really_ bright. In this case, it's because there's a solar flare that'sproducing immense amounts of light. A common trick for making things easier to see is to apply a nonlinear correction. Here are a few options:
