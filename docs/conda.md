@@ -132,3 +132,31 @@ VSCode 是一个基于图形界面的文本编辑器和开发环境。系里的�
 
 如需更多详细信息，请查看 [VS Code](https://code.visualstudio.com/docs/debugtest/debugging) 的相关页面。
 该页面提供了关于如何进入调试器，以及如何设置和导航断点的说明。
+
+# Jupyter Notebook 转换成 PDF 文件
+
+在终端输入`jupyter nbconvert --to webpdf + 你的文件名.ipynb`或者在Jupyter notebook 代码行输入 `!`后接上述命令
+
+```bash
+jupyter nbconvert --to webpdf filtering.ipynb
+[NbConvertApp] Converting notebook filtering.ipynb to webpdf
+[NbConvertApp] Building PDF
+[NbConvertApp] PDF successfully created
+[NbConvertApp] Writing 385168 bytes to filtering.pdf
+```
+
+注意，webpdf生成需要`playwright`库，并安装`chronium`
+
+```bash
+pip install playwright
+```
+
+安装`playwright`库
+```bash
+pip install playwright
+```
+
+安装`chromium`
+```bash
+playwright install chromium
+```bash
