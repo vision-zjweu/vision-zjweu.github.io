@@ -88,11 +88,11 @@ The assignment has four parts and corresponding folders in the starter code:
 <figure class="figure-container">
 	<div class="flex-container">
 		<figure>
-			<img src="{{site.url}}/assets/hw1/dog-1.jpg" alt="vis_{{i}}" width="90px">
+			<img src="{{site.url}}/assets/hw1/dog-1.jpg" alt="vis_{{i}}" width="300px">
 			<figcaption>输入图片1</figcaption>
 		</figure>
 				<figure>
-			<img src="{{site.url}}/assets/hw1/dog-2.jpg" alt="vis_{{i}}" width="90px">
+			<img src="{{site.url}}/assets/hw1/dog-2.jpg" alt="vis_{{i}}" width="300px">
 			<figcaption>失败案例 </figcaption>
 		</figure>
 	</div>
