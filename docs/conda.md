@@ -158,3 +158,37 @@ pip install playwright
 ```bash
 playwright install chromium
 ```
+
+# Windows only: 集成 'Anaconda Prompt' 到终端
+
+
+在课程的大部分内容中，所需环境现已配置完成。  
+
+为了方便起见，我们可以让 VSCode 识别 **Miniforge Prompt**，这样就能在 VSCode 内部使用它。  
+操作步骤如下：  
+1. 打开 VSCode；  
+2. 打开设置（快捷键 `CTRL+,`）；  
+3. 搜索 `terminal.integrated.profiles.windows`；  
+4. 通过该入口编辑 `settings.json` 来添加一个新的终端配置。  
+
+打开 `settings.json` 后，你会看到类似如下的 JSON 配置。  
+我们的任务是为 **Anacondsa Prompt** 添加一个条目，甚至可以让它自动激活 `base` 环境。  
+下面我们已经提供了一个示例条目，名称为 **"CV 2025"**。  
+
+```
+{
+   [...]
+   "terminal.integrated.profiles.windows": {
+      "PowerShell": {
+         "source": "PowerShell",
+         "icon": "terminal-powershell"
+      },
+      "Miniforge CSCI 1430": {
+         "path": "${env:windir}\\System32\\cmd.exe",
+         "args": ["/K","${env:USERPROFILE}\\miniforge3\\Scripts\\activate.bat","csci1430"]
+      },
+      "Another Shell": {
+      [...]
+   }
+}
+```
