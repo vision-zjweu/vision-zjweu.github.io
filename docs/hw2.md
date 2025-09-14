@@ -81,6 +81,9 @@ The assignment has four parts and corresponding folders in the starter code:
 
 
 ### 1 卷积
+
+*(25 points)* 
+
 <figure class="figure-container">
 	<div class="flex-container">
 		<figure>
@@ -89,7 +92,7 @@ The assignment has four parts and corresponding folders in the starter code:
 	</div>
 	<figcaption>图 1: 由Pestco提供的一张宠物照片。  </figcaption>
 </figure>
-*(25 points)* 
+
 	
 对提供的宠物图片应用水平与垂直梯度滤波器 $$[1 -1]$$ 和 $$[1 − 1]^T$$，分别得到滤波响应 $$I_x$$ 与 $$I_y$$。 <span class="code">请编写函数 `convolve(im, h)`，其输入为灰度图像与二维滤波器，输出为两者的卷积结果</span>。请不要使用诸如 `scipy` 中的“黑箱”滤波函数（例如现成的卷积/相关 API）。你可以使用 `numpy.dot`（并非必须）；更建议将卷积实现为**嵌套的 for 循环**。随后按示例代码计算边缘强度，并可视化 $$I_x$$、$$I_y$$ 以及边缘强度图。边缘强度建议按 $$I_x^2 + I_y^2$$ 计算。  
 
@@ -98,6 +101,10 @@ The assignment has four parts and corresponding folders in the starter code:
 需要注意，这种简单的滤波方法会有相当高的**错误率**——既会遗漏真实的物体边界，也会错误地检测出伪边缘。幸运的是，**Petsco** 团队将志愿对这些错误进行人工修正。
 
 ### 2 高斯滤波
+
+*(15 points)* 
+
+
 <figure class="figure-container">
 	<div class="flex-container">
 		<figure>
@@ -106,7 +113,7 @@ The assignment has four parts and corresponding folders in the starter code:
 	</div>
 	<figcaption>图 2:简单边缘检测器的一个失败案例。  这些图像已在起始代码中提供。  </figcaption>
 </figure>
-*(15 points)* 
+
 
 尽管你提交的边缘检测器在某些宠物上表现良好，但工程师们报告了大量失败案例，这让 Petsco 的高管非常不满。更令人担忧的是，它在处理毛发蓬松的狗（例如 “doodle” 杂交犬）时经常失效 —— 这是对我们的赞助商而言极具商业价值的市场（见图 1b）。  
 
