@@ -164,7 +164,7 @@ playwright install chromium
 
 在课程的大部分内容中，所需环境现已配置完成。  
 
-为了方便起见，我们可以让 VSCode 识别 **Miniforge Prompt**，这样就能在 VSCode 内部使用它。  
+为了方便起见，我们可以让 VSCode 识别 **Anaconda Prompt**，这样就能在 VSCode 内部使用它。  
 操作步骤如下：  
 1. 打开 VSCode；  
 2. 打开设置（快捷键 `CTRL+,`）；  
@@ -172,7 +172,7 @@ playwright install chromium
 4. 通过该入口编辑 `settings.json` 来添加一个新的终端配置。  
 
 打开 `settings.json` 后，你会看到类似如下的 JSON 配置。  
-我们的任务是为 **Anacondsa Prompt** 添加一个条目，甚至可以让它自动激活 `base` 环境。  
+我们的任务是为 **Anaconda Prompt** 添加一个条目，甚至可以让它自动激活 `base` 环境。  
 下面我们已经提供了一个示例条目，名称为 **"cv2025"**。  
 
 ```
@@ -193,7 +193,7 @@ playwright install chromium
 }
 ```
 
-如果你愿意，也可以将 **Miniforge Prompt** 设置为 VSCode 的默认终端。  
+如果你愿意，也可以将 **Anaconda Prompt** 设置为 VSCode 的默认终端。  
 请注意，这一操作会作为 VSCode 的**全局设置**生效。  
 
 操作方法：  
