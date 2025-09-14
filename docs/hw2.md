@@ -78,6 +78,9 @@ The assignment has four parts and corresponding folders in the starter code:
 一家大型宠物零食供应商**Petsco** 认为，计算机视觉可以帮助他们在与长期竞争对手 **Petsmart** 的较量中取得优势。  为了避免采用目前行业内普遍的做法（逐一手工标注猫狗图像中的边缘），他们希望我们能够提供一种自动化的解决方案。
 
 
+
+
+### 1 卷积
 <figure class="figure-container">
 	<div class="flex-container">
 		<figure>
@@ -86,9 +89,6 @@ The assignment has four parts and corresponding folders in the starter code:
 	</div>
 	<figcaption>图 1: 由Pestco提供的一张宠物照片。  </figcaption>
 </figure>
-
-### 1 卷积
-
 *(25 points)* 
 	
 对提供的宠物图片应用水平与垂直梯度滤波器 $$[1 -1]$$ 和 $$[1 − 1]^T$$，分别得到滤波响应 $$I_x$$ 与 $$I_y$$。 <span class="code">请编写函数 `convolve(im, h)`，其输入为灰度图像与二维滤波器，输出为两者的卷积结果</span>。请不要使用诸如 `scipy` 中的“黑箱”滤波函数（例如现成的卷积/相关 API）。你可以使用 `numpy.dot`（并非必须）；更建议将卷积实现为**嵌套的 for 循环**。随后按示例代码计算边缘强度，并可视化 $$I_x$$、$$I_y$$ 以及边缘强度图。边缘强度建议按 $$I_x^2 + I_y^2$$ 计算。  
