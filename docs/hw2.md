@@ -73,7 +73,7 @@ The assignment has four parts and corresponding folders in the starter code:
 
 
 
-## Pet edge detection
+## 宠物图像边缘检测
 
 一家大型宠物零食供应商**Petsco** 认为，计算机视觉可以帮助他们在与长期竞争对手 **Petsmart** 的较量中取得优势。  为了避免采用目前行业内普遍的做法（逐一手工标注猫狗图像中的边缘），他们希望我们能够提供一种自动化的解决方案。
 
