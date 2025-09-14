@@ -81,15 +81,10 @@ The assignment has four parts and corresponding folders in the starter code:
 <figure class="figure-container">
 	<div class="flex-container">
 		<figure>
-			<img src="{{site.url}}/assets/hw1/dog-1.jpg" alt="vis_{{i}}" width="300px">
-			<figcaption>(a) 一张输入图片</figcaption>
-		</figure>
-				<figure>
-			<img src="{{site.url}}/assets/hw1/dog-2.jpg" alt="vis_{{i}}" width="300px">
-			<figcaption>(b) 失败案例 </figcaption>
+			<img src="{{site.url}}/assets/hw1/dog-1.jpg" alt="vis_{{i}}" width="500px">
 		</figure>
 	</div>
-	<figcaption>图 1: (a) 由Pestco提供的一张宠物照片。  (b) 简单边缘检测器的一个失败案例。  这些图像已在起始代码中提供。  </figcaption>
+	<figcaption>图 1: 由Pestco提供的一张宠物照片。  </figcaption>
 </figure>
 
 ### 1 卷积
@@ -103,7 +98,14 @@ The assignment has four parts and corresponding folders in the starter code:
 需要注意，这种简单的滤波方法会有相当高的**错误率**——既会遗漏真实的物体边界，也会错误地检测出伪边缘。幸运的是，**Petsco** 团队将志愿对这些错误进行人工修正。
 
 ### 2 高斯滤波
-
+<figure class="figure-container">
+	<div class="flex-container">
+		<figure>
+			<img src="{{site.url}}/assets/hw1/dog-2.jpg" alt="vis_{{i}}" width="500px">
+		</figure>
+	</div>
+	<figcaption>图 2:简单边缘检测器的一个失败案例。  这些图像已在起始代码中提供。  </figcaption>
+</figure>
 *(15 points)* 
 
 尽管你提交的边缘检测器在某些宠物上表现良好，但工程师们报告了大量失败案例，这让 Petsco 的高管非常不满。更令人担忧的是，它在处理毛发蓬松的狗（例如 “doodle” 杂交犬）时经常失效 —— 这是对我们的赞助商而言极具商业价值的市场（见图 1b）。  
