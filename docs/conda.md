@@ -39,6 +39,9 @@ Conda 是由 Anaconda, Inc. 开发的包与环境管理工具，它可以在一�
 
 我们使用 **Anaconda** 版的 Conda，其中已经包含了本课程所需的大部分Python库。 我们建议你安装最新的 [Anaconda](https://www.anaconda.com/download/){:target="_blank"} （Python 3.1X 版本）。
 
+[Anaconda百度网盘链接](https://pan.baidu.com/s/1JYNiSFtiaCKW3S0v3-xxiw?pwd=uc43)
+
+
 在本课程中，我们将大量使用以下Python库：
 
  - [Numpy](https://numpy.org/doc/stable/user/quickstart.html){:target="_blank"} 
