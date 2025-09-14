@@ -39,7 +39,7 @@ due: 11:59 p.m. on Wednesday January 31st, 2024
 
 ## 说明
 
-项目截止时间 **{{ page.due }}**.
+<!-- 项目截止时间 **{{ page.due }}**. -->
 
 <!-- The submission includes two parts:
 
