@@ -122,7 +122,7 @@ Petsco 的团队认为，这一错误的根源在于：梯度滤波器常常会�
 
 4. 在上述两幅模糊图像上分别计算边缘。  
 
-	> 注：对于 **11 × 11** 的方框滤波器，通常每个元素为 **1/121**（即 \(1/11^2\)）。上文的 **1/112** 可能是笔误；若作业要求未明确修正，请以原文为准或在报告中加以说明。
+	> 注：对于 **11 × 11** 的方框滤波器，通常每个元素为 **1/121**（即 $$1/11^2$$）。上文的 **1/112** 可能是笔误；若作业要求未明确修正，请以原文为准或在报告中加以说明。
 
 请按照与题目 1.1 相同的方式对边缘进行可视化。你的 notebook 应当包含以下结果：  	(i) 未进行模糊处理时计算得到的边缘；  (ii) 使用高斯模糊计算得到的边缘；  (iii) 使用方框滤波计算得到的边缘；  此外，还需展示：  (iv) 高斯模糊后的图像；  (v) 方框滤波后的图像。
 
@@ -139,7 +139,7 @@ Petsco 的团队认为，这一错误的根源在于：梯度滤波器常常会�
 
  好消息！Petsco 的高管们对你的工作非常满意，并已决定为后续的若干作业继续提供资助。  
 然而，在我们最近的一次会议上，他们又提出了新的要求：Petsco 的竞争对手 Petsmart 现在已经能够计算宠物图像中的**有方向性的边缘**。  
-与仅估计水平或垂直梯度不同，他们可以在任意角度 \(\theta\) 下获得梯度。  
+与仅估计水平或垂直梯度不同，他们可以在任意角度 $$\theta$$ 下获得梯度。  
 
 不过，Petsmart 的方法在计算上非常昂贵：他们会为每一个角度构造一个新的滤波器，并用其对图像进行滤波。  
 Petsco 认为，通过利用本课程中关于**可旋转滤波器（steerable filters）**的知识，有机会在这一领域超越对手。  
@@ -156,20 +156,20 @@ Petsco 认为，通过利用本课程中关于**可旋转滤波器（steerable f
 Petsco 还希望能够提供**提升低质量宠物照片**的功能。  
 给定一张带噪声的宠物图像，请使用你在 (c) 部分中开发的**方框滤波器**和**高斯滤波器**去除噪声。  
 
-随后，请实现一个函数 `median(im, k)`，利用 \(k \times k\) 的窗口进行中值滤波。  
-具体来说，对于噪声图像中的每一个像素，你需要计算其邻域内 \(k \times k\) 窗口中其他像素的**中值强度值**。  
+随后，请实现一个函数 `median(im, k)`，利用 $$k \times k$$ 的窗口进行中值滤波。  
+具体来说，对于噪声图像中的每一个像素，你需要计算其邻域内 $$k \times k$$ 窗口中其他像素的**中值强度值**。  
 
 你的代码应与 `convolve` 的实现非常相似，但在内部循环中，不再计算加权平均，而是计算**中值**。  
 你可以使用内置函数（例如 `np.median`）来计算列表或数组的中值。  
 
-请包含 \(k = 3\) 和 \(k = 7\) 两种情况的实验结果。  
+请包含 $$k = 3$$ 和 $$k = 7$$ 两种情况的实验结果。  
 
 你的解答应展示以下 5 张图像：  
 (i) 含噪声的原始图像；  
 (ii) 经过方框滤波的含噪声图像；  
 (iii) 经过高斯滤波的含噪声图像；  
-(iv) 使用 \(k = 3\) 的中值滤波结果；  
-(v) 使用 \(k = 7\) 的中值滤波结果。  
+(iv) 使用 $$k = 3$$ 的中值滤波结果；  
+(v) 使用 $$k = 7$$ 的中值滤波结果。  
 
 
 Throughout the course, a lot of the data you have access to will be in the form of an image. These won't be stored and saved in the same format that you're used to when interacting with ordinary images, such as off your cell phone: sometimes they'll have negative values, really really big values, or invalid values. If you can look at images quickly, then you'll find bugs quicker. If you **only** print debug, you'll have a bad time. To teach you about interpreting things, I've got a bunch of mystery data that we'll analyze together. You'll write a brief version of the important `imsave` function for visualizing.
