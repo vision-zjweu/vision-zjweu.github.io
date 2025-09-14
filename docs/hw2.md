@@ -37,7 +37,7 @@ due: 11:59 p.m. on Wednesday January 31st, 2024
 
 </div> -->
 
-## 说明
+## Instructions
 
 This homework is **due at {{ page.due }}**.
 
