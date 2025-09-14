@@ -63,15 +63,6 @@ The submission includes two parts:
 
    For including code, **do not use screenshots**. Generate a PDF using a [tool like this](https://www.i2pdf.com/source-code-to-pdf){:target="_blank"} or using this [Overleaf LaTeX template](https://www.overleaf.com/read/wbpyympmgfkf#bac472){:target="_blank"}. If this PDF contains only code, be sure to append it to the end of your report and match the questions carefully on Gradescope.
 
-### Python Environment
-
-Consider referring to the [Python standard library docs](https://docs.python.org/3.7/library/index.html){:target="_blank"} when you have questions about Python utilties.
-
-We recommend you install the latest [Anaconda](https://www.anaconda.com/download/){:target="_blank"} for Python 3.12. This is a Python package manager that includes most of the modules you need for this course. We will make use of the following packages extensively in this course:
-
-- [Numpy](https://numpy.org/doc/stable/user/quickstart.html){:target="_blank"}
-- [Matplotlib](https://matplotlib.org/stable/tutorials/introductory/pyplot.html){:target="_blank"}
-- [OpenCV](https://opencv.org/){:target="_blank"}
 
 ## Overview
 
@@ -89,7 +80,7 @@ The assignment has four parts and corresponding folders in the starter code:
 
 
 
-## Data Interpretation and Visualization
+## Pet edge detection
 
 <figure class="figure-container">
 	<div class="flex-container">
@@ -114,6 +105,9 @@ The assignment has four parts and corresponding folders in the starter code:
 	</div>
 	<figcaption>Figure 2: The Mystery Data, Visualized with the Plasma Colormap</figcaption>
 </figure>
+
+我们的合作伙伴 **Petsco** 认为，计算机视觉可以帮助他们在与长期竞争对手 **Petsmart™** 的较量中取得优势。  为了避免采用目前行业内普遍的做法——逐一手工标注猫狗图像中的边缘——他们希望我们能够提供一种自动化的解决方案。
+
 
 Throughout the course, a lot of the data you have access to will be in the form of an image. These won't be stored and saved in the same format that you're used to when interacting with ordinary images, such as off your cell phone: sometimes they'll have negative values, really really big values, or invalid values. If you can look at images quickly, then you'll find bugs quicker. If you **only** print debug, you'll have a bad time. To teach you about interpreting things, I've got a bunch of mystery data that we'll analyze together. You'll write a brief version of the important `imsave` function for visualizing.
 
