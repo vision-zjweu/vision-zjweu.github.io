@@ -195,15 +195,7 @@ Petsco 还希望能够提供**提升低质量宠物照片**的功能。
 (iv) 使用 $$k = 3$$ 的中值滤波结果；  
 (v) 使用 $$k = 7$$ 的中值滤波结果。  
 
-<div class="primer-spec-callout warning" markdown="1">
-  
-   **Beware:**
-	
-   1. There are a bunch of edge cases in the equation for the color: it won't always return an integer between $$0$$ and $$N-1$$. It will also definitely blow up under certain input conditions (also, watch the type).
-   2. You're asked by the code to return a `HxW uint8` image. There are a lot of shortcuts/implied sizes and shapes in computer vision notation -- since this is a `HxW` *color* image, it should have 3 channels (i.e., be `HxWx3`). Since it's `uint8`, you should make the image go from $$0$$ to $$255$$ before returning it (otherwise everything gets clipped to $$0$$ and $$1$$, which correspond to the two lowest brightness settings). Like all other jargon, this is annoying until it is learned; after it is learned, it is then useful.
-   3. If you choose to save the results using opencv, you may have blue and red flipped -- `opencv` assumes blue is first and the rest of the world assumes red is first. You can identify this by the fact that the columns of the are defined as Red/Green/Blue and there is a lot of blue and not much red in the lowest entry.
 
-</div>
 
 
 # 任务清单
