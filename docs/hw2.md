@@ -92,8 +92,9 @@ The assignment has four parts and corresponding folders in the starter code:
 	<figcaption>图 1: (a) 由Pestco提供的一张宠物照片。  (b) 简单边缘检测器的一个失败案例。  这些图像已在起始代码中提供。  </figcaption>
 </figure>
 
-
-1. 对提供的宠物图片应用水平与垂直梯度滤波器 $$[1 -1]$$ 和 $$[1 − 1]^T$$，分别得到滤波响应 $$I_x$$ 与 $$I_y$$。 <span class="code">请编写函数 `convolve(im, h)`，其输入为灰度图像与二维滤波器，输出为两者的卷积结果</span>。请不要使用诸如 `scipy` 中的“黑箱”滤波函数（例如现成的卷积/相关 API）。你可以使用 `numpy.dot`（并非必须）；更建议将卷积实现为**嵌套的 for 循环**。随后按示例代码计算边缘强度，并可视化 $$I_x$$、$$I_y$$ 以及边缘强度图。边缘强度建议按 $$I_x^2 + I_y^2$$ 计算。  
+### 1.1 
+	
+	 对提供的宠物图片应用水平与垂直梯度滤波器 $$[1 -1]$$ 和 $$[1 − 1]^T$$，分别得到滤波响应 $$I_x$$ 与 $$I_y$$。 <span class="code">请编写函数 `convolve(im, h)`，其输入为灰度图像与二维滤波器，输出为两者的卷积结果</span>。请不要使用诸如 `scipy` 中的“黑箱”滤波函数（例如现成的卷积/相关 API）。你可以使用 `numpy.dot`（并非必须）；更建议将卷积实现为**嵌套的 for 循环**。随后按示例代码计算边缘强度，并可视化 $$I_x$$、$$I_y$$ 以及边缘强度图。边缘强度建议按 $$I_x^2 + I_y^2$$ 计算。  
 
 	函数返回的滤波响应应与输入图像具有**相同尺寸**。请使用**零填充**（zero padding），即假设越界的图像像素为 0。并且务必实现的是**卷积（convolution）**，而不是**互相关（cross-correlation）**（提示：卷积需要对滤波核进行翻转）。
 
@@ -117,7 +118,20 @@ The assignment has four parts and corresponding folders in the starter code:
 
 		(iv) 在上述两幅模糊图像上分别计算边缘。  
 
-> 注：对于 **11 × 11** 的方框滤波器，通常每个元素为 **1/121**（即 \(1/11^2\)）。上文的 **1/112** 可能是笔误；若作业要求未明确修正，请以原文为准或在报告中加以说明。
+		> 注：对于 **11 × 11** 的方框滤波器，通常每个元素为 **1/121**（即 \(1/11^2\)）。上文的 **1/112** 可能是笔误；若作业要求未明确修正，请以原文为准或在报告中加以说明。
+	
+	请按照与题目 1.1 相同的方式对边缘进行可视化。你的 notebook 应当包含以下结果：  	(i) 未进行模糊处理时计算得到的边缘；  (ii) 使用高斯模糊计算得到的边缘；  (iii) 使用方框滤波计算得到的边缘；  此外，还需展示：  (iv) 高斯模糊后的图像；  (v) 方框滤波后的图像。（2 分）  
+
+	(d) 与其先对图像进行两次卷积来计算 \(I_x\)（即先用高斯模糊滤波器，再用梯度滤波器），不如创建一个单一的滤波器 \(G_x\)，其输出应与两次卷积的结果相同。你可以复用 (c) 部分中的函数。请使用提供的代码对该滤波器进行可视化。（2 分）  
+
+
+
+
+
+
+
+询问 ChatGPT
+
 
 
 Throughout the course, a lot of the data you have access to will be in the form of an image. These won't be stored and saved in the same format that you're used to when interacting with ordinary images, such as off your cell phone: sometimes they'll have negative values, really really big values, or invalid values. If you can look at images quickly, then you'll find bugs quicker. If you **only** print debug, you'll have a bad time. To teach you about interpreting things, I've got a bunch of mystery data that we'll analyze together. You'll write a brief version of the important `imsave` function for visualizing.
