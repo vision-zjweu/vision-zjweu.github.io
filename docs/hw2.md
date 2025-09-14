@@ -41,7 +41,7 @@ due: 11:59 p.m. on Wednesday January 31st, 2024
 
 This homework is **due at {{ page.due }}**.
 
-The submission includes two parts:
+<!-- The submission includes two parts:
 
 1. **To Canvas**: submit a `zip` file containing a **single** directory with your **uniqname** as the name that contains all your code (subdirectories are fine).
 
@@ -69,7 +69,7 @@ The assignment has four parts and corresponding folders in the starter code:
 - Numpy Intro (folder `numpy/`)
 - Data Interpretation and Visualization (folder `visualize/`)
 - Lights on a Budget (folder `dither/`)
-- Colorspaces
+- Colorspaces -->
 
 
 
