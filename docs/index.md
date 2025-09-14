@@ -29,7 +29,7 @@ layout: spec
 
 ## 理论课
 
- - [Project 1: Filtering](hw1.md)
+ <!-- - [Project 1: Filtering](hw1.md) -->
 <!-- - [Homework 1: Numbers and Images](hw1en.md)  -->
 
 <!-- 
