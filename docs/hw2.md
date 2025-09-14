@@ -100,7 +100,7 @@ The assignment has four parts and corresponding folders in the starter code:
 
 函数返回的滤波响应应与输入图像具有**相同尺寸**。请使用**零填充**（zero padding），即假设越界的图像像素为 0。并且务必实现的是**卷积（convolution）**，而不是**互相关（cross-correlation）**（提示：卷积需要对滤波核进行翻转）。
 
-需要注意，这种简单的滤波方法会有相当高的**错误率**——既会遗漏真实的物体边界，也会错误地检测出伪边缘。幸运的是，**Petsco** 团队将志愿对这些错误进行人工修正（4 分）。
+需要注意，这种简单的滤波方法会有相当高的**错误率**——既会遗漏真实的物体边界，也会错误地检测出伪边缘。幸运的是，**Petsco** 团队将志愿对这些错误进行人工修正。
 
 ### 2 高斯滤波
 
@@ -124,14 +124,14 @@ Petsco 的团队认为，这一错误的根源在于：梯度滤波器常常会�
 
 	> 注：对于 **11 × 11** 的方框滤波器，通常每个元素为 **1/121**（即 \(1/11^2\)）。上文的 **1/112** 可能是笔误；若作业要求未明确修正，请以原文为准或在报告中加以说明。
 
-请按照与题目 1.1 相同的方式对边缘进行可视化。你的 notebook 应当包含以下结果：  	(i) 未进行模糊处理时计算得到的边缘；  (ii) 使用高斯模糊计算得到的边缘；  (iii) 使用方框滤波计算得到的边缘；  此外，还需展示：  (iv) 高斯模糊后的图像；  (v) 方框滤波后的图像。（2 分）  
+请按照与题目 1.1 相同的方式对边缘进行可视化。你的 notebook 应当包含以下结果：  	(i) 未进行模糊处理时计算得到的边缘；  (ii) 使用高斯模糊计算得到的边缘；  (iii) 使用方框滤波计算得到的边缘；  此外，还需展示：  (iv) 高斯模糊后的图像；  (v) 方框滤波后的图像。
 
 ### 3 过滤器改进
 
 *(15 points)* 
 
 
-与其先对图像进行两次卷积来计算 $$I_x$$（即先用高斯模糊滤波器，再用梯度滤波器），不如创建一个单一的滤波器 $$G_x$$，其输出应与两次卷积的结果相同。你可以复用 （2） 部分中的函数。请使用提供的代码对该滤波器进行可视化。（2 分）  
+与其先对图像进行两次卷积来计算 $$I_x$$（即先用高斯模糊滤波器，再用梯度滤波器），不如创建一个单一的滤波器 $$G_x$$，其输出应与两次卷积的结果相同。你可以复用 （2） 部分中的函数。请使用提供的代码对该滤波器进行可视化。
 
 ### 4 可旋转滤波器
 
@@ -146,7 +146,7 @@ Petsco 认为，通过利用本课程中关于**可旋转滤波器（steerable f
 
 请编写一个函数 `oriented_grad(Ix, Iy, θ)`，在给定水平梯度 `Ix` 与垂直梯度 `Iy` 的情况下，返回在角度 θ 方向上的引导梯度。  使用该函数在输入图像的模糊版本上计算梯度，其中 θ ∈ {π/4, π/2, 3π/4}，并采用与 (c) 部分相同的高斯模糊核。  
 
-请按照题目 1 中对梯度的可视化方式展示这些结果。（2 分）  
+请按照题目 1 中对梯度的可视化方式展示这些结果。
 
 ### 5 噪声消除
 
@@ -170,7 +170,7 @@ Petsco 还希望能够提供**提升低质量宠物照片**的功能。
 (iii) 经过高斯滤波的含噪声图像；  
 (iv) 使用 \(k = 3\) 的中值滤波结果；  
 (v) 使用 \(k = 7\) 的中值滤波结果。  
-（3 分）
+
 
 Throughout the course, a lot of the data you have access to will be in the form of an image. These won't be stored and saved in the same format that you're used to when interacting with ordinary images, such as off your cell phone: sometimes they'll have negative values, really really big values, or invalid values. If you can look at images quickly, then you'll find bugs quicker. If you **only** print debug, you'll have a bad time. To teach you about interpreting things, I've got a bunch of mystery data that we'll analyze together. You'll write a brief version of the important `imsave` function for visualizing.
 
