@@ -161,8 +161,14 @@ pip install playwright
 playwright install chromium
 ```
 
-## Windows only: 集成 'Anaconda Prompt' 到终端
+## 集成 'Anaconda Prompt' 到终端
 
+
+<div class="primer-spec-callout warning" markdown="1">
+   
+   这里提供的方法尽针对 Windows 电脑。
+
+</div>
 
 在课程的大部分内容中，所需环境现已配置完成。  
 
