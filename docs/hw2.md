@@ -92,15 +92,6 @@ The assignment has four parts and corresponding folders in the starter code:
 	<figcaption>图 1: (a) 由Pestco提供的一张宠物照片。  (b) 简单边缘检测器的一个失败案例。  这些图像已在起始代码中提供。  </figcaption>
 </figure>
 
-1. *(2 points)* Try loading `mysterydata2.npy` and visualizing it. You should get something like Figure 3. It's hard to see stuff because one spot is _really_ bright. In this case, it's because there's a solar flare that'sproducing immense amounts of light. A common trick for making things easier to see is to apply a nonlinear correction. Here are a few options:
-
-   $$
-	p^\gamma \ \textrm{with}\  \gamma \in [0,1] \quad\textrm{or}\quad \log(p) \quad\textrm{or}\quad \log(1+p)
-   $$
-
-   where the last one can be done with `np.log1p`. Apply a nonlinear correction to the second mystery data and visualize it. {{ report }} <span class="report"> Put two of the channels i.e. `X[:,:,i]` as images into the report.</span> You can stick them side-by-side.
-
-
 
 1. 对提供的宠物图片应用水平与垂直梯度滤波器 $$[1 -1]$$ 和 $$[1 − 1]^T$$，分别得到滤波响应 $$I_x$$ 与 $$I_y$$。 <span class="code">请编写函数 `convolve(im, h)`，其输入为灰度图像与二维滤波器，输出为两者的卷积结果</span>。请不要使用诸如 `scipy` 中的“黑箱”滤波函数（例如现成的卷积/相关 API）。你可以使用 `numpy.dot`（并非必须）；更建议将卷积实现为**嵌套的 for 循环**。随后按示例代码计算边缘强度，并可视化 $$I_x$$、$$I_y$$ 以及边缘强度图。边缘强度建议按 $$I_x^2 + I_y^2$$ 计算。  
 
