@@ -7,7 +7,7 @@ layout: spec
 
 
 
-# 项目指导
+# Overview
 
 <!-- ## 环境搭建
 
@@ -27,8 +27,8 @@ layout: spec
 - 1: Numpy
 <!-- - [练习 2: 数据可视化](hw2.md) -->
 
- ## 理论课
- 
+## 理论课
+
  - 项目1: Filtering
 <!-- - [Homework 1: Numbers and Images](hw1en.md)  -->
 
