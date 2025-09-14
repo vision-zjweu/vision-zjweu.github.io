@@ -29,14 +29,13 @@ due: 11:59 p.m. on Wednesday January 31st, 2024
 {% capture autograde %}<i class="fa fa-robot icon-large"></i>{% endcapture %}
 {% capture report %}<i class="fa fa-file icon-large"></i>{% endcapture %}
 
-# Anaconda
+# Python 安装
 
-当你对 Python 的工具有疑问时，可以参考 [Python 标准库文档](https://docs.python.org/3.7/library/index.html){:target="_blank"}
-。
+本课程使用 **Python** 作为编程语言。为了简化软件库的安装与管理，本课程同时使用 **conda**。  
+Conda 是由 Anaconda, Inc. 开发的包与环境管理工具，它可以在一个隔离的软件沙箱中快速安装所需库并解决依赖问题。  
+这样一来，你在本课程中使用的软件环境将与机器上的其他课程或个人项目相互独立，不会产生干扰。  
 
-我们建议你安装最新的 [Anaconda](https://www.anaconda.com/download/){:target="_blank"} （Python 3.12 版本）。Anaconda 是一个 Python 包管理器，其中已经包含了本课程所需的大部分Python库。
-
-[Anaconda百度网盘链接](https://pan.baidu.com/s/1JYNiSFtiaCKW3S0v3-xxiw?pwd=uc43)
+我们使用 **Anaconda** 版的 Conda，其中已经包含了本课程所需的大部分Python库。 我们建议你安装最新的 [Anaconda](https://www.anaconda.com/download/){:target="_blank"} （Python 3.1X 版本）。
 
 在本课程中，我们将大量使用以下Python库：
 
@@ -44,6 +43,8 @@ due: 11:59 p.m. on Wednesday January 31st, 2024
  - [Matplotlib](https://matplotlib.org/stable/tutorials/introductory/pyplot.html){:target="_blank"} 
  - [OpenCV](https://opencv.org/){:target="_blank"}
  - PyTorch
+
+当你对 Python 的工具有疑问时，可以参考 [Python 标准库文档](https://docs.python.org/3.7/library/index.html){:target="_blank"}。
 
 # VSCode 环境
 
