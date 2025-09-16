@@ -16,11 +16,11 @@ layout: spec
 
 ## 实践课
 
-<div class="primer-spec-callout warning" markdown="1">
+<!-- <div class="primer-spec-callout warning" markdown="1">
    
    **Important:** 上课前请在自己电脑安装好Anaconda、VS Code（参考 0: 环境搭建）和腾讯会议。
 
-</div>
+</div> -->
 
 
 - [0: 环境搭建](conda.md) 
