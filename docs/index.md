@@ -29,7 +29,8 @@ layout: spec
 
 ## 理论课
 
- <!-- - [Project 1: Filtering](hw1.md) -->
+ - [Project 1: Filtering](hw1.md)
+ <!-- ([英文版](hw1.md)) -->
 <!-- - [Homework 1: Numbers and Images](hw1en.md)  -->
 
 <!-- 
@@ -85,7 +86,7 @@ layout: spec
 ### 作业提交
 请在学习通完成作业提交.
 - **Jupyter Notebook** 
-   - 需要提交有运行结果的ipynb文件，没有运行结果作业计0分。
+   - 需要提交有运行结果的ipynb文件和pdf文件，没有运行结果作业计0分。
    - 请检查所有markdown单元都被执行且显示正常，否则扣10分格式分数。
    - 请删除调试信息或者库安装信息，否则扣10分格式分数。
 
