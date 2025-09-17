@@ -223,6 +223,8 @@ Petsco 还希望能够提供**提升低质量宠物照片**的功能。
 
 <img src="{{site.url}}/assets/hw1/ref1.png" alt="vis_{{i}}" width="500px">
 
+2.
 <img src="{{site.url}}/assets/hw1/ref2.png" alt="vis_{{i}}" width="500px">
 
-<img src="{{site.url}}/assets/hw1/ref2.png" alt="vis_{{i}}" width="500px">
+4.
+<img src="{{site.url}}/assets/hw1/ref3.png" alt="vis_{{i}}" width="500px">
