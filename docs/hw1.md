@@ -217,3 +217,12 @@ Petsco 还希望能够提供**提升低质量宠物照片**的功能。
 - [ ] `你的学号.ipynb`
 - [ ] `你的学号.pdf`
 
+# 参考结果
+
+1.  
+
+<img src="{{site.url}}/assets/hw1/ref1.png" alt="vis_{{i}}" width="500px">
+
+<img src="{{site.url}}/assets/hw1/ref2.png" alt="vis_{{i}}" width="500px">
+
+<img src="{{site.url}}/assets/hw1/ref2.png" alt="vis_{{i}}" width="500px">
