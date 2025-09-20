@@ -144,7 +144,7 @@ def t4(R, X):
 	return None
 ```
 
-### What We Provide
+### 我门提供的信息
 
 
 对于每一道题，我们提供以下信息：
@@ -157,7 +157,6 @@ def t4(R, X):
 
 
 
-### Walkthroughs and Hints
 
 ### 讲解与提示（Walkthroughs and Hints）
 
