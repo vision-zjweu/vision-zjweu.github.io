@@ -32,7 +32,7 @@ title: Homework 1 – Numbers and Images
 # Lab2
 
 
-## Numpy Intro
+### Lab要求
 
 All the code/data for this is located in the folder `numpy/`. Each assignment requires you to fill in the blank in a function (in `tests.py` and `warmup.py`) and return the value described in the comment for the function. There’s driver code you do not need to read in `run.py` and `common.py`.
 
