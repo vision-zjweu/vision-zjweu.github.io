@@ -127,17 +127,19 @@ Ran warmup tests
 ```python
 def t4(R, X):
 	"""
-	Inputs:
-	- R: A numpy array of shape (3, 3) giving a rotation matrix
-	- X: A numpy array of shape (N, 3) giving a set of 3-dimensional vectors
-	Returns:
-	A numpy array Y of shape (N, 3) where Y[i] is X[i] rotated by R
-	Par: 3 lines
-	Instructor: 1 line
-	Hint:
-	1) If v is a vector, then the matrix-vector product Rv rotates the vector
-	   by the matrix R.
-	2) .T gives the transpose of a matrix
+	输入 (Inputs):
+	- R: 一个形状为 (3, 3) 的 numpy 数组，表示旋转矩阵
+	- X: 一个形状为 (N, 3) 的 numpy 数组，表示一组三维向量
+
+	返回值 (Returns):
+	一个形状为 (N, 3) 的 numpy 数组 Y，其中 Y[i] 是由矩阵 R 旋转后的 X[i]
+
+	代码行数 (Par): 3 行
+	参考实现 (Instructor): 1 行
+
+	提示 (Hint):
+	1) 如果 v 是一个向量，那么矩阵-向量乘积 Rv 会将向量 v 按照矩阵 R 旋转。
+	2) .T 表示矩阵的转置
 	"""
 	return None
 ```
