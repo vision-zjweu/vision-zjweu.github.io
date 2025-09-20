@@ -32,30 +32,16 @@ title: Homework 1 – Numbers and Images
 # Lab2
 
 
-### Lab要求
-
-All the code/data for this is located in the folder `numpy/`. Each assignment requires you to fill in the blank in a function (in `tests.py` and `warmup.py`) and return the value described in the comment for the function. There’s driver code you do not need to read in `run.py` and `common.py`.
-
-**Note**: All the `python` below refer to `python3`. As we stated earlier, we are going to use Python 3.12 in this assignment. Python 2 was [sunset](https://www.python.org/doc/sunset-python-2/){:target="_blank"} on January 1, 2022.
-
-1. *(40 points)* {{ report }} <span class="report">Fill in the code stubs in tests.py and warmups.py. Put the terminal output in your pdf from</span>:
-
-```console
-$ python run.py --allwarmups
-$ python run.py --alltests
-```
+### Lab说明
 
 
-所有的代码/数据都位于文件夹 `numpy/` 中。  
-每个作业都要求你在函数（位于 `tests.py` 和 `warmup.py` 中）中填补空白，并返回函数注释中描述的值。  
-在 `run.py` 和 `common.py` 中有驱动代码，你无需阅读。  
+所有的代码/数据都位于文件夹 `numpy/` 中。  每个任务都要求你在函数（位于 `tests.py` 和 `warmup.py` 中）中填补空白，并返回函数注释中描述的值。  
+在 `run.py` 和 `common.py` 中有我们的预先设置代码，你无需阅读或理解他们。  
 
 
-### 作业要求
 
-1. 
-   在 `tests.py` 和 `warmups.py` 中填写代码存根。  
-   在 PDF 中附上以下命令的终端输出：  
+
+1.  在 `tests.py` 和 `warmups.py` 中填写代码存根。  在 学习通 中附上以下命令的终端输出截图：  
 
    ```console
    $ python run.py --allwarmups
@@ -64,14 +50,13 @@ $ python run.py --alltests
 
 
 
-### 我必须答对所有题目吗？
-不需要。我们会给 **部分分**：  
-- 每个 **warmup 练习** 占该题总分的 **2%**  
-- 每个 **test** 占该题总分的 **3%**
+我必须答对所有题目吗？不需要。我们会给 **部分分**：  
+- 每个 **warmup 练习** 占该题总分的 **4%**  
+- 每个 **test** 占该题总分的 **6%**
 
 ---
 
-## 测试说明
+### 测试说明
 
 当你打开这两个文件之一时，你会看到类似下面的初始代码：
 
@@ -87,27 +72,9 @@ def sample1(xs):
 ```
 
 
-**Do I have to get every question right?** We give partial credit: each warmup exercise is worth 2% of the total grade for this question and each test is worth 3% of the total grade for this question.
 
-### Tests Explained
+你应该按照下面的方式完成函数的实现：
 
-When you open one of these two files, you will see starter code that looks like this:
-
-```python
-def sample1(xs):
-	"""
-	Inputs:
-	- xs: A list of values
-	Returns:
-	The first entry of the list
-	"""
-	return None
-```
-
-
-
-
-你可以通过运行测试脚本来检验你的实现：
 ```python
 def sample1(xs):
 	"""
