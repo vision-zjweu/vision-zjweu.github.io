@@ -34,24 +34,23 @@ title: Homework 1 – Numbers and Images
 
 
 
-所有的代码/数据都位于文件夹 `numpy/` 中。  每个任务都要求你在函数（位于 `tests.py` 和 `warmup.py` 中）中填补空白，并返回函数注释中描述的值。  
+所有的代码/数据都位于文件夹 `numpy/` 中。  每个任务都要求你在函数（位于  `warmup.py` 中）中填补空白，并返回函数注释中描述的值。  
 在 `run.py` 和 `common.py` 中有我们的预先设置代码，你无需阅读或理解他们。  
 
 
 
 
-1.  在 `tests.py` 和 `warmups.py` 中填写代码存根。  在 学习通 中附上以下命令的终端输出截图：  
+1.  在`warmups.py` 中填写代码存根。  在 学习通 中附上以下命令的终端输出截图：  
 
    ```console
    $ python run.py --allwarmups
-   $ python run.py --alltests
    ```
 
 
-
+<!-- 
 我必须答对所有题目吗？不需要。我们会给 **部分分**：  
-- 每个 **warmup 练习** 占Lab总分的 **2%**  
-- 每个 **test** 占Lab总分的 **3%**
+- 每个 **warmup 练习** 占Lab总分的 **5%**   -->
+<!-- - 每个 **test** 占Lab总分的 **3%** -->
 
 
 ### Lab说明
@@ -90,8 +89,7 @@ def sample1(xs):
 ```bash
 python run.py --test w1     # 检查 warmups.py 中的 w1 练习题
 python run.py --allwarmups  # 检查所有 warmup 练习题
-python run.py --test t1     # 检查 tests.py 中的 t1 测试题
-python run.py --alltests    # 检查所有测试题
+
 
 # 检查所有 warmup 练习题；如果有任何失败，就启动 pdb 调试器
 # 这样你就可以找到差异
@@ -114,7 +112,7 @@ Ran warmup tests
 
 你需要解决 `warmups.py` 中的全部 20 个热身练习题。它们都可以用**一行代码**解决。  
 
-### 测试题目
+<!-- ### 测试题目
 
 你需要解决 `tests.py` 中的全部 20 个测试题。很多题目无法用一行代码解决。  
 你**不能使用循环**来解决任何题目，不过你可能想先写一个慢的 for 循环解法，以确保你知道正确的计算方式，然后再将 for 循环解法改写成非循环解法。  
@@ -212,7 +210,7 @@ $$\|\xB-\yB\|^2 = \|\xB\|^2 + \|\yB\|^2 - 2\xB^T \yB,$$  它对任意向量对 $
 
 2. 简单查看一下 `np.meshgrid` 的文档。然后调用它，参数设为 `np.arange(3)` 和 `np.arange(5)`。看看是否能创建两个数组，使得 `IndexI[i,j] = i` 且 `IndexJ[i,j] = j`。
 
-3. 将你原来用两层 `for` 循环实现的判断条件，替换成直接使用 `IndexI` 和 `IndexJ` 的方式。
+3. 将你原来用两层 `for` 循环实现的判断条件，替换成直接使用 `IndexI` 和 `IndexJ` 的方式。 -->
 
 
 
@@ -223,4 +221,4 @@ $$\|\xB-\yB\|^2 = \|\xB\|^2 + \|\yB\|^2 - 2\xB^T \yB,$$  它对任意向量对 $
 
 In the `zip` file you submit to Canvas, the directory named after your uniqname should include the following files:
 - [ ] `warmups.py`
-- [ ] `tests.py`
+<!-- - [ ] `tests.py` -->
