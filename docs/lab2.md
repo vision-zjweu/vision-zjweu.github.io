@@ -53,7 +53,6 @@ title: Homework 1 – Numbers and Images
 - 每个 **warmup 练习** 占Lab总分的 **2%**  
 - 每个 **test** 占Lab总分的 **3%**
 
----
 
 ### Lab说明
 
