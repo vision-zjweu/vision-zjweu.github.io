@@ -32,7 +32,6 @@ title: Homework 1 – Numbers and Images
 # Lab2
 
 
-### Lab说明
 
 
 所有的代码/数据都位于文件夹 `numpy/` 中。  每个任务都要求你在函数（位于 `tests.py` 和 `warmup.py` 中）中填补空白，并返回函数注释中描述的值。  
@@ -56,7 +55,8 @@ title: Homework 1 – Numbers and Images
 
 ---
 
-### 测试说明
+### Lab说明
+
 
 当你打开这两个文件之一时，你会看到类似下面的初始代码：
 
