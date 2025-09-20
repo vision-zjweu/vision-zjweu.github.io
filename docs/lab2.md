@@ -144,84 +144,84 @@ def t4(R, X):
 
 ### What We Provide
 
-For each problem, we provide:
 
-- **Inputs**: The arguments that are provided to the function
-- **Returns**: What you are supposed to return from the function
-- **Par**: How many lines of code it should take. We don’t grade on this, but if it takes more lines than this, there is probably a better way to solve it. Except for t10, you should not use any explicit loops.
-- **Instructor**: How many lines our solution takes. Can you do better? Hints: Functions and other tips you might find useful for this problem.
+对于每一道题，我们提供以下信息：
+
+- **输入 (Inputs)**：传递给函数的参数  
+- **返回值 (Returns)**：函数应当返回的结果  
+- **代码行数 (Par)**：预期需要的代码行数。我们不会直接根据这一点打分，但如果你写的行数远多于这个数，可能说明有更简洁的方法可以解决。除了 t10 外，你不应该使用显式的循环。  
+- **参考实现 (Instructor)**：我们的解答所用的代码行数。你能写得更简洁吗？  
+- **提示 (Hints)**：对解决该问题有帮助的函数和其他小技巧。  
+
+
 
 ### Walkthroughs and Hints
 
-**Test 8:** If you get the axes wrong, numpy will do its best to make sure that the computations go through but the answer will be wrong. If your mean variable is $$1 \times 1$$, you may find yourself with a matrix where the full matrix has mean zero. If your standard deviation variable is $$1 \times M$$, you may find each column has standard deviation one.
+### 讲解与提示（Walkthroughs and Hints）
 
-**Test 9:** This sort of functional form appears throughout data-processing. This is primarily an exercise in writing out code with multiple nested levels of calculations. Write each part of the expression one line at a time, checking the sizes at each step.
+**测试 8（Test 8）：**  
+如果把轴（axes）弄错，NumPy 会尽力通过广播让计算“跑”起来，但结果会是错的。  
+如果你的均值变量是 $$1 \times 1$$（标量），你可能会得到一个“整矩阵均值为 0”的结果。  
+如果你的标准差变量是 $$1 \times M$$，你可能会发现“每一列”的标准差都变成 1。
 
-**Test 10:** This is an exercise in handling weird data formats. You may want to do this with for loops first.
+**测试 9（Test 9）：**  
+这种函数形式在数据处理里随处可见。本题主要练习把多层嵌套的计算逐步写出来。  
+建议把表达式拆成多行：每行实现一部分，并在每一步都检查张量/数组的形状（size/shape）是否正确。
 
-1. First, make a loop that calculates the vector `C[i]` that is the centroid of the data in `Xs[i]`. To figure out the meaning of things, there is no shame in trying operations and seeing which produce the right shape. Here we have to specify that the centroid is M-dimensions to point out how we want `Xs[i]` interpreted. The centroid (or average of the vectors) has to be calculated with the average going down the columns (i.e., rows are individual vectors and columns are dimensions).
-2. Allocate a matrix that can store all the pairwise distances. Then, double for loop over the centroids i and j and produce the distances.
+**测试 10（Test 10）：**  
+这是一次“处理奇怪数据格式”的练习。你可以先用 `for` 循环写出正确版本再优化。
 
-**Test 11:**
-You are given a set of vectors $$\xB_1, \ldots, \xB_N$$ where each vector $$x_i \in \mathbb{R}^M$$. These vectors are stacked together to create a matrix $$\XB \in \mathbb{R}^{N \times M}$$. Your goal is to create a matrix $$\DB \in \mathbb{R}^{N \times N}$$ such that $$\DB_{i,j} = \|\xB_i - \xB_j\|$$. Note that $$\|\xB_i - \xB_j\|$$ is the L2-norm or the Euclidean length of the vector. The useful identity you are given is that $$\|\xB-\yB\|^2 = \|\xB\|^2 + \|\yB\|^2 - 2\xB^T \yB$$. This is true for any pair of vectors $$\xB$$ and $$\yB$$ and can be used to calculate the distance quickly.
+1. 先写一个循环来计算向量 `C[i]`，它是 `Xs[i]` 中数据的“质心（centroid）”。为弄清含义，大可尝试不同操作并观察哪种得到期望的形状。这里需要明确质心是 **M 维** 的，以说明我们如何理解 `Xs[i]`：行表示样本向量，列表示维度；因此质心（即向量的平均）应当沿着**列方向**取平均（也就是说，按列求均值、对行求平均）。
+2. 分配一个矩阵，用来存放所有成对（pairwise）距离。然后对质心的下标 i 和 j 做双重循环，计算并填入距离。
 
-At each step, your goal is to replace slow but correct code with fast and correct code. If the code breaks at a particular step, you know where the bug is.
+**测试 11（Test 11）：**  
+给定一组向量 $$\xB_1, \ldots, \xB_N$$，其中每个向量 $$x_i \in \mathbb{R}^M$$。把这些向量按行堆叠得到矩阵 $$\XB \in \mathbb{R}^{N \times M}$$。你的目标是构造矩阵 $$\DB \in \mathbb{R}^{N \times N}$$，满足  
+$$\DB_{i,j} = \|\xB_i - \xB_j\|.$$  
+这里的 $$\|\xB_i - \xB_j\|$$ 是 L2 范数（欧氏长度）。给出的有用恒等式为  
+$$\|\xB-\yB\|^2 = \|\xB\|^2 + \|\yB\|^2 - 2\xB^T \yB,$$  
+它对任意向量对 $$\xB,\yB$$ 都成立，可用来高效计算距离。
 
-1. First, write a correct but slow solution that uses two for loops. In the inner body, you should plug in the given identity to make $$\DB_{i,j} = \|\xB_i\|^2 + \|\xB_j\|^2 - 2 \xB_i^T \xB_j$$. Do this in three separate terms.
-2. Next, write a version that first computes a matrix that contains all the dot products, or $$\PB \in \mathbb{R}^{N \times N}$$ such that $$\PB_{i,j} = \xB_i^T \xB_j$$. This can be done in a single matrix-matrix operation. You can then calculate the distance by doing $$\DB_{i,j} = \|\xB_i\|^2 + \|\xB_j\|^2 - 2\PB_{i,j}$$.
-3. Finally, calculate a matrix containing the norms, or a $$\NB \in \mathbb{R}^{N \times N}$$ such that $$\NB_{i,j} = \|\xB_i\|^2 + \|\xB_j\|^2$$. You can do this in two stages: first, calculate the squared norm of each row of $$\XB$$ by summing the squared values across the row. Suppose $$\SB$$ is this array (i.e., $$\SB_{i} = \|\xB_i\|^2$$ and $$\SB_{i} \in \mathbb{R}^{N}$$), but be careful that you look at the _shape_ that you get as output. If you compute $$\SB + \SB^T$$, you should get $$\NB$$. Now you can calculate the distance inside the double for loop as $$\DB_{i,j} = \NB_{i,j} - 2 \PB_{i,j}$$.
-4. The double for loop is now not very useful. You can just add/scale the two arrays together elementwise.
-
-**Test 18:** Here you draw a circle by finding all entries in a matrix that are within $$r$$ cells
-of a row $$y$$ and column $$x$$. This is a not particularly intellectually stimulating exercise, but it is practice in writing (and debugging) code that reasons about rows and columns.
-
-1. First, write a correct but slow solution that uses two for loops. In the inner body, plug in the correct test for the given i, j. Make sure the
-   test passes; be careful about rows and columns.
-2. Look at the documentation for `np.meshgrid` briefly. Then call it with `np.arange(3)` and `np.arange(5)` as
-   arguments. See if you can create two arrays such that `IndexI[i,j] = i` and `IndexJ[i,j] = j`.
-3. Replace your test that uses two for loops with something that just uses `IndexI` and `IndexJ`.
+在每一步中，你的目标是把“慢但正确”的代码逐步替换为“快且正确”的代码。一旦代码在某一步出错，你就能迅速定位到 bug 所在的步骤。
 
 
+1. 首先，写一个正确但较慢的解法，使用两层 `for` 循环。在内层循环中，代入给定恒等式，令  
+   $$\DB_{i,j} = \|\xB_i\|^2 + \|\xB_j\|^2 - 2 \xB_i^T \xB_j$$。  
+   请将其分成三个独立的部分来实现。
 
-# Tasks Checklist
+2. 接下来，写一个版本，先计算一个包含所有点积的矩阵  
+   $$\PB \in \mathbb{R}^{N \times N}$$，其中 $$\PB_{i,j} = \xB_i^T \xB_j$$。  
+   这可以通过一次矩阵-矩阵运算完成。然后你可以使用  
+   $$\DB_{i,j} = \|\xB_i\|^2 + \|\xB_j\|^2 - 2\PB_{i,j}$$ 来计算距离。
 
-This section is meant to help you keep track of the many tasks you have to complete:
+3. 最后，计算一个包含所有范数的矩阵  
+   $$\NB \in \mathbb{R}^{N \times N}$$，其中 $$\NB_{i,j} = \|\xB_i\|^2 + \|\xB_j\|^2$$。  
+   你可以分两步完成：首先，计算矩阵 $$\XB$$ 每一行的平方范数，即对每行的元素平方求和。设该数组为 $$\SB$$，即  
+   $$\SB_{i} = \|\xB_i\|^2, \quad \SB \in \mathbb{R}^{N}$$。  
+   但要注意结果的形状（shape）。如果你计算 $$\SB + \SB^T$$，就会得到 $$\NB$$。  
+   现在可以在双重循环中通过  
+   $$\DB_{i,j} = \NB_{i,j} - 2 \PB_{i,j}$$ 来计算距离。
 
-- [ ] **NumPy Intro**:
-  - [ ] 1.1 - {{ report }} Terminal Output
-- [ ] **Data Interpretation and Visualization**:
-  - [ ] 2.1 - {{ report }} 2 images from `mysterydata2.npy`
-  - [ ] 2.2 - {{ report }} 2 images from `mysterydata3.npy`
-  - [ ] 2.3 - {{ code }}{{ report }} `colorMapArray`
-  - [ ] 2.4 - {{ report }} 9 images from `mysterydata4.npy`
-- [ ] **Lights on a Budget**:
-	- [ ] 3.1 Naive Approach
-		- [ ] 1 - {{ code }} `quantize`
-		- [ ] 2 - {{ code }}{{ report }} `quantizeNaive`
-		- [ ] 3 - {{ report }} Quantize Runtime
-		- [ ] 4 - {{ report }} Intensity Values vs Palette Values
-		- [ ] 5 - {{ report }} Two input/output pairs: `aep.jpg` + your choice
-	- [ ] 3.2 Floyd-Steinberg
-		- [ ] 1 - {{ code }} `quantizeFloyd`
-		- [ ] 2 - {{ report }} Why does dithering work?
-		- [ ] 3 - {{ report }} 3 results from `gallery/` including `aep.jpg`
-	- [ ] 3.3 Resizing Images
-		- [ ] 1 - {{ code }}{{ report }} `resizeToSquare`
-	- [ ] 3.4 Handling Color
-		- [ ] 1 - {{ code }}{{ report }} `quantize` (scalar and vector)
-		- [ ] 2 - {{ code }}{{ report }} `quantizeFloyd` (multi-channel)
-		- [ ] 3 - {{ report }} 4 results
-	- [ ] 3.5 Gamma Correction (*optional*)
-- [ ] **Colorspaces**:
-	- [ ] 4.1 - {{ code }}{{ report }} R,G,B plots
-	- [ ] 4.2 - {{ code }}{{ report }} L,A,B plots
-	- [ ] 4.3 - {{ report }} RGB vs LAB
-	- [ ] 4.4 - {{ report }} Two images and their Luminance plots
+4. 此时，双重循环已无必要。你可以直接对两个矩阵逐元素相加/缩放，得到结果。
 
-# Canvas Submission Checklist
+---
+
+**测试 18（Test 18）：**  
+这里的任务是画一个圆：即找出矩阵中所有位于指定行 $$y$$ 和列 $$x$$ 的 **r 个单元格范围**内的元素。  
+这不是一个特别有挑战性的任务，但它能帮助你练习编写（和调试）能够正确处理行列逻辑的代码。
+
+1. 首先，写一个正确但较慢的解法，使用两层 `for` 循环。在内层循环中，插入对给定 i, j 的正确判断条件。确保测试通过，并注意行和列的区别。
+
+2. 简单查看一下 `np.meshgrid` 的文档。然后调用它，参数设为 `np.arange(3)` 和 `np.arange(5)`。看看是否能创建两个数组，使得 `IndexI[i,j] = i` 且 `IndexJ[i,j] = j`。
+
+3. 将你原来用两层 `for` 循环实现的判断条件，替换成直接使用 `IndexI` 和 `IndexJ` 的方式。
+
+
+
+
+
+
+# 提交清单
 
 In the `zip` file you submit to Canvas, the directory named after your uniqname should include the following files:
 - [ ] `warmups.py`
 - [ ] `tests.py`
-- [ ] `dither.py`
-- [ ] `mystery_visualize.py`
