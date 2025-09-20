@@ -29,63 +29,8 @@ title: Homework 1 – Numbers and Images
 {% capture autograde %}<i class="fa fa-robot icon-large"></i>{% endcapture %}
 {% capture report %}<i class="fa fa-file icon-large"></i>{% endcapture %}
 
-# Homework 1 – Numbers and Images
+# Lab2
 
-<div class="primer-spec-callout warning" markdown="1">
-   
-   **Important:** Changes to rubric and submission format announced on Piazza [@58](https://piazza.com/class/lr0rfd6e5dm5wf/post/58){:target="_blank"} .
-
-</div>
-
-## Instructions
-
-This homework is **due at {{ page.due }}**.
-
-The submission includes two parts:
-
-1. **To Canvas**: submit a `zip` file containing a **single** directory with your **uniqname** as the name that contains all your code (subdirectories are fine).
-
-   {{ code }} -
-   <span class="code">We have indicated questions where you have to do something in code in red. **If gradecope asks for it, also submit your code in the report with the formatting below.** </span>  
-
-   Starter code is given to you on Canvas under the "Homework 1" assignment. You can also download it [here](https://drive.google.com/file/d/1Bpqc8LLT67uLR4ZmbKYeMwvvYMrw_Gl-/view?usp=sharing). Clean up your submission to include only the necessary files.
-
-   <div class="primer-spec-callout info" markdown="1">
-	 **Submission Tip:** Use the [Tasks Checklist](#tasks-checklist) and [Canvas Submission Checklist](#canvas-submission-checklist) at the end of this homework. We also provide a script that validates the submission format [here](https://raw.githubusercontent.com/eecs442/utils/master/check_submission.py){:target="_blank"}.
-   </div>
-
-2. **To Gradescope**: submit a `pdf` file as your write-up, including your answers to all the questions and key choices you made.
-
-   {{ report }} -
-   <span class="report">We have indicated questions where you have to do something in the report in green. **Some coding questions also need to be included in the report.**</span>
-
-   The write-up must be an electronic version. **No handwriting, including plotting questions.** $$\LaTeX$$ is recommended but not mandatory.
-
-   For including code, **do not use screenshots**. Generate a PDF using a [tool like this](https://www.i2pdf.com/source-code-to-pdf){:target="_blank"} or using this [Overleaf LaTeX template](https://www.overleaf.com/read/wbpyympmgfkf#bac472){:target="_blank"}. If this PDF contains only code, be sure to append it to the end of your report and match the questions carefully on Gradescope.
-
-### Python Environment
-
-Consider referring to the [Python standard library docs](https://docs.python.org/3.7/library/index.html){:target="_blank"} when you have questions about Python utilties.
-
-We recommend you install the latest [Anaconda](https://www.anaconda.com/download/){:target="_blank"} for Python 3.12. This is a Python package manager that includes most of the modules you need for this course. We will make use of the following packages extensively in this course:
-
-- [Numpy](https://numpy.org/doc/stable/user/quickstart.html){:target="_blank"}
-- [Matplotlib](https://matplotlib.org/stable/tutorials/introductory/pyplot.html){:target="_blank"}
-- [OpenCV](https://opencv.org/){:target="_blank"}
-
-## Overview
-
-In this assignment, you’ll work through three tasks that help set you up for success in the class as well as a short assignment involving playing with color. The assignment has three goals.
-
-1. **Show you bugs in a low-stakes setting**. You’ll encounter a lot of programming mistakes in the course and we want to show you common bugs early on. Here, the programming problems are deliberately easy!
-2. **Learn to write reasonably good Python and NumPy code**. Having layers of nested `for` loops will cause bugs and is not feasible for us to debug, use NumPy effectively! If you have not had any experience with NumPy, read this [tutorial](http://cs231n.github.io/python-numpy-tutorial/){:target="_blank"} before starting.
-
-The assignment has four parts and corresponding folders in the starter code:
-
-- Numpy Intro (folder `numpy/`)
-- Data Interpretation and Visualization (folder `visualize/`)
-- Lights on a Budget (folder `dither/`)
-- Colorspaces
 
 ## Numpy Intro
 
@@ -99,6 +44,48 @@ All the code/data for this is located in the folder `numpy/`. Each assignment re
 $ python run.py --allwarmups
 $ python run.py --alltests
 ```
+
+
+所有的代码/数据都位于文件夹 `numpy/` 中。  
+每个作业都要求你在函数（位于 `tests.py` 和 `warmup.py` 中）中填补空白，并返回函数注释中描述的值。  
+在 `run.py` 和 `common.py` 中有驱动代码，你无需阅读。  
+
+
+### 作业要求
+
+1. 
+   在 `tests.py` 和 `warmups.py` 中填写代码存根。  
+   在 PDF 中附上以下命令的终端输出：  
+
+   ```console
+   $ python run.py --allwarmups
+   $ python run.py --alltests
+   ```
+
+
+
+### 我必须答对所有题目吗？
+不需要。我们会给 **部分分**：  
+- 每个 **warmup 练习** 占该题总分的 **2%**  
+- 每个 **test** 占该题总分的 **3%**
+
+---
+
+## 测试说明
+
+当你打开这两个文件之一时，你会看到类似下面的初始代码：
+
+```python
+def sample1(xs):
+    """
+    输入:
+    - xs: 一个数值列表
+    返回:
+    列表中的第一个元素
+    """
+    return None
+
+
 
 **Do I have to get every question right?** We give partial credit: each warmup exercise is worth 2% of the total grade for this question and each test is worth 3% of the total grade for this question.
 
