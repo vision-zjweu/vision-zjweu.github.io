@@ -51,8 +51,8 @@ title: Homework 1 – Numbers and Images
 
 
 我必须答对所有题目吗？不需要。我们会给 **部分分**：  
-- 每个 **warmup 练习** 占该题总分的 **4%**  
-- 每个 **test** 占该题总分的 **6%**
+- 每个 **warmup 练习** 占Lab总分的 **2%**  
+- 每个 **test** 占Lab总分的 **3%**
 
 ---
 
