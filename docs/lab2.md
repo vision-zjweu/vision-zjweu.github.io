@@ -127,12 +127,12 @@ python run.py --allwarmups  # 检查所有 warmup 练习题
 python run.py --test t1     # 检查 tests.py 中的 t1 测试题
 python run.py --alltests    # 检查所有测试题
 
-# 检查所有 warmup 练习题；如果有任何失败，可以尝试用 python debuuger 调试
+# 检查所有 warmup 练习题；如果有任何失败，就启动 pdb 调试器
 # 这样你就可以找到差异
 python run.py --allwarmups --pdb
 ```
 
-If you are checking all the warmup problems (or test problems), the perfect result will be:
+如果你在检查所有 warmup 练习题（或测试题），理想的输出结果应该是：
 
 ```bash
 python run.py --allwarmups
@@ -144,15 +144,18 @@ Ran warmup tests
 20/20 = 100.0
 ```
 
-### Warmup Problems
+### 热身练习题
 
-You need to solve all 20 of the warmup problems in `warmups.py`. They are all solvable with one line of code.
+你需要解决 `warmups.py` 中的全部 20 个热身练习题。它们都可以用**一行代码**解决。  
 
-### Test Problems
+### 测试题目
 
-You need to solve all 20 problems in `tests.py`. Many are not solvable in one line. You may not use a loop to solve any of the problems, although you may want to first figure out a slow for-loop solution to make sure you know what the right computation is, before changing the for-loop solution to a non for-loop solution. The one exception to the no-loop rule is t10 (although this can also be solved without loops).
+你需要解决 `tests.py` 中的全部 20 个测试题。很多题目无法用一行代码解决。  
+你**不能使用循环**来解决任何题目，不过你可能想先写一个慢的 for 循环解法，以确保你知道正确的计算方式，然后再将 for 循环解法改写成非循环解法。  
+在所有题目中，唯一允许使用循环的例外是 **t10**（不过它同样可以不用循环来解决）。  
 
-Here is one example:
+下面是一个示例：  
+
 
 ```python
 def t4(R, X):
