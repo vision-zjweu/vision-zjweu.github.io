@@ -84,7 +84,7 @@ def sample1(xs):
     列表中的第一个元素
     """
     return None
-
+```
 
 
 **Do I have to get every question right?** We give partial credit: each warmup exercise is worth 2% of the total grade for this question and each test is worth 3% of the total grade for this question.
@@ -104,29 +104,31 @@ def sample1(xs):
 	return None
 ```
 
-You should fill in the implementation of the function, like this:
 
+
+
+你可以通过运行测试脚本来检验你的实现：
 ```python
 def sample1(xs):
 	"""
-	Inputs:
-	- xs: A list of values
-	Returns:
-	The first entry of the list
+	输入:
+	- xs: 一个数值列表
+	返回:
+	列表的第一个元素
 	"""
 	return xs[0]
 ```
 
-You can test your implementation by running the test script:
+你可以通过运行测试脚本来检验你的实现：
 
 ```bash
-python run.py --test w1     # Check warmup problem w1 from warmups.py
-python run.py --allwarmups  # Check all the warmup problems
-python run.py --test t1     # Check the test problem t1 from tests.py
-python run.py --alltests    # Check all the test problems
+python run.py --test w1     # 检查 warmups.py 中的 w1 练习题
+python run.py --allwarmups  # 检查所有 warmup 练习题
+python run.py --test t1     # 检查 tests.py 中的 t1 测试题
+python run.py --alltests    # 检查所有测试题
 
-# Check all the warmup problems; if any of them fail, then launch the pdb
-# debugger so you can find the difference
+# 检查所有 warmup 练习题；如果有任何失败，可以尝试用 python debuuger 调试
+# 这样你就可以找到差异
 python run.py --allwarmups --pdb
 ```
 
