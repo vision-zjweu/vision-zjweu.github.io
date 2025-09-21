@@ -37,6 +37,10 @@ layout: spec
 ## 实践期末项目指导
 
 详细说明见 [这里](proj.md)。 -->
+# 课件
+
+[课件](https://pan.baidu.com/s/1JYNiSFtiaCKW3S0v3-xxiw?pwd=uc43)
+
 
 # 课程说明
 
