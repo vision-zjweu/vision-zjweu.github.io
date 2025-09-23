@@ -25,11 +25,12 @@ layout: spec
 
 - [0: 环境搭建](conda.md) 
 - 1: Numpy
+- 2: Convolution/Edge Dectection
 <!-- - [练习 2: 数据可视化](hw2.md) -->
 
 ## 理论课
 
- - [Project 1: Filtering](hw1.md)
+ - [PS1: Filtering](hw1.md)
  <!-- ([英文版](hw1.md)) -->
 <!-- - [Homework 1: Numbers and Images](hw1en.md)  -->
 
