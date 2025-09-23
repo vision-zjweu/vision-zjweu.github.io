@@ -43,7 +43,7 @@ layout: spec
 
 | Date日期                  | 内容                                                                                       | 材料 |
 |-----------------------|:-------------------------------------------------------------------------------------------:|----------|
-| Wednesday<br>Jan 10   | **Introduction + Filtering** | [课件](https://pan.baidu.com/s/1JYNiSFtiaCKW3S0v3-xxiw?pwd=uc43){:target="_blank"} <br> Reading: S2.1|
+| Wednesd周二y<br>09.16   | **Introduction + Filtering** | [课件](https://pan.baidu.com/s/1JYNiSFtiaCKW3S0v3-xxiw?pwd=uc43){:target="_blank"} <br> Reading: S2.1|
 
 
 # 课程说明
