@@ -38,15 +38,16 @@ layout: spec
 ## 实践期末项目指导
 
 详细说明见 [这里](proj.md)。 -->
-# 课程安排
+### 课程安排
 
 <!-- [课件](https://pan.baidu.com/s/1JYNiSFtiaCKW3S0v3-xxiw?pwd=uc43) -->
 
 | 日期                  | 内容                                                                                       | 材料 |
 |-----------------------|:-------------------------------------------------------------------------------------------:|----------|
 | 周二<br>09.16   | **Introduction + Filtering** | [课件](https://pan.baidu.com/s/1JYNiSFtiaCKW3S0v3-xxiw?pwd=uc43){:target="_blank"} |
-| 周三<br>09.17   | **Image filtering** | [课件](https://pan.baidu.com/s/1JYNiSFtiaCKW3S0v3-xxiw?pwd=uc43){:target="_blank"} |
+| 周三<br>09.17   | **Image Filtering** | [课件](https://pan.baidu.com/s/1JYNiSFtiaCKW3S0v3-xxiw?pwd=uc43){:target="_blank"} |
 | 周二<br>09.23   | **Image Pyramid** | [课件](https://pan.baidu.com/s/1JYNiSFtiaCKW3S0v3-xxiw?pwd=uc43){:target="_blank"} |
+| 周二<br>09.24   | **Frequency** | [课件](https://pan.baidu.com/s/1JYNiSFtiaCKW3S0v3-xxiw?pwd=uc43){:target="_blank"} |
 
 
 # 课程说明
