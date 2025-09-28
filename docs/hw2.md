@@ -65,7 +65,7 @@ due: 11:59 p.m. on Wednesday January 31st, 2024
 
 首先，我们将实现以下函数，这些函数将用于：从一幅图像构建拉普拉斯金字塔，以及从拉普拉斯金字塔重建图像。
 
-请回忆：我们需要在高斯金字塔中进行下采样，并在拉普拉斯金字塔中进行上/下采样。在你的实现中，**金字塔的上采样与下采样都应使用高斯核**。用于上采样的核应与用于下采样的核相同，只是其核本身需要再乘以 4。（提示：在实现金字塔上采样时，`np.insert` 可能会很有用；在实现 `pyramid.upsample` 与 `pyramid.downsample` 时，`scipy.ndimage.gaussian_filter` 也可能派上用场——务必阅读其关于“radius”的参数说明，以便设置正确的核大小）。将高斯核的标准差设为 **σ = 1**。
+请回忆：我们需要在高斯金字塔中进行降采样（downsample），并在拉普拉斯金字塔中进行下采样（downsample）。在你的实现中，**金字塔的上采样与下采样都应使用高斯核**。用于上采样的核应与用于下采样的核相同，只是其核本身需要再乘以 4。（提示：在实现金字塔上采样时，`np.insert` 可能会很有用；在实现 `pyramid.upsample` 与 `pyramid.downsample` 时，`scipy.ndimage.gaussian_filter` 也可能派上用场——务必阅读其关于“radius”的参数说明，以便设置正确的核大小）。将高斯核的标准差设为 **σ = 1**。
 
 - **pyramid upsample（金字塔上采样）**
 - **pyramid downsample（金字塔下采样）**
