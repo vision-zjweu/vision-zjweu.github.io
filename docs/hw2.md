@@ -140,12 +140,15 @@ due: 11:59 p.m. on Wednesday January 31st, 2024
 注意：这里仅提供部分结果
 1.  
 
-<img src="{{site.url}}/assets/hw1/hw2_ref1.png" alt="vis_{{i}}" width="500px">
-<img src="{{site.url}}/assets/hw1/hw2_ref2.png" alt="vis_{{i}}" width="500px">
+<img src="{{site.url}}/assets/hw2/hw2_ref1.png" alt="vis_{{i}}" width="500px">
+
+<img src="{{site.url}}/assets/hw2/hw2_ref2.png" alt="vis_{{i}}" width="500px">
 
 2.
 
-<img src="{{site.url}}/assets/hw1/hw2_ref3.png" alt="vis_{{i}}" width="500px">
-<img src="{{site.url}}/assets/hw1/hw2_ref4.png" alt="vis_{{i}}" width="500px">
-<img src="{{site.url}}/assets/hw1/hw2_ref5.png" alt="vis_{{i}}" width="500px">
+<img src="{{site.url}}/assets/hw2/hw2_ref3.png" alt="vis_{{i}}" width="500px">
+
+<img src="{{site.url}}/assets/hw2/hw2_ref4.png" alt="vis_{{i}}" width="500px">
+
+<img src="{{site.url}}/assets/hw2/hw2_ref5.png" alt="vis_{{i}}" width="500px">
 
