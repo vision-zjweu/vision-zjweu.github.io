@@ -3,7 +3,7 @@ layout: spec
 permalink: /hw3
 latex: true
 
-title: Homework 1 – Numbers and Images
+title: PS 2 – Image Blending
 due: 11:59 p.m. on Wednesday January 31st, 2024
 ---
 
