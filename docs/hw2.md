@@ -124,15 +124,15 @@ due: 11:59 p.m. on Wednesday January 31st, 2024
 - [ ] `你的学号.pdf`
 
 # 参考结果
-
+注意：这里仅提供部分结果
 1.  
 
-<img src="{{site.url}}/assets/hw1/ref1.png" alt="vis_{{i}}" width="500px">
+<img src="{{site.url}}/assets/hw1/hw2_ref1.png" alt="vis_{{i}}" width="500px">
+<img src="{{site.url}}/assets/hw1/hw2_ref2.png" alt="vis_{{i}}" width="500px">
 
 2.
 
-<img src="{{site.url}}/assets/hw1/ref2.png" alt="vis_{{i}}" width="500px">
+<img src="{{site.url}}/assets/hw1/hw2_ref3.png" alt="vis_{{i}}" width="500px">
+<img src="{{site.url}}/assets/hw1/hw2_ref4.png" alt="vis_{{i}}" width="500px">
+<img src="{{site.url}}/assets/hw1/hw2_ref5.png" alt="vis_{{i}}" width="500px">
 
-4.
-
-<img src="{{site.url}}/assets/hw1/ref3.png" alt="vis_{{i}}" width="500px">
