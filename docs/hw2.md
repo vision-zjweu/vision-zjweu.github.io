@@ -60,7 +60,7 @@ due: 11:59 p.m. on Wednesday January 31st, 2024
 
 ### 1 图像金字塔
 
-*(60 points)* 
+*(50 points)* 
 
 
 首先，我们将实现以下函数，这些函数将用于：从一幅图像构建拉普拉斯金字塔，以及从拉普拉斯金字塔重建图像。
@@ -87,7 +87,7 @@ due: 11:59 p.m. on Wednesday January 31st, 2024
 
 ### 2 图像融合
 
-*(30 points)* 
+*(20 points)* 
 
 实现函数 **pyramid_blend(im1, im2, mask, num_levels)**。其输入为两幅图像和一个二值掩码（mask,指示每个像素来自哪一幅图像）。该函数应构建一个包含 **num_levels** 层的**拉普拉斯金字塔**来融合这两幅输入图像。
 
@@ -106,6 +106,7 @@ due: 11:59 p.m. on Wednesday January 31st, 2024
 ## 傅立叶变换
 
 ### 1
+*(20 points)* 
 
 使用高斯滤波器对给定图像进行卷积：
 
