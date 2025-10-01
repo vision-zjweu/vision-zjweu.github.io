@@ -234,3 +234,77 @@ In the `zip` file you submit to Canvas, the directory named after your uniqname 
 - [ ] `tests.py`
 - [ ] `dither.py`
 - [ ] `mystery_visualize.py`
+
+
+### 3.2 - L-layer Neural Network
+
+The initialization for a deeper L-layer neural network is more complicated because there are many more weight matrices and bias vectors. When completing the `initialize_parameters_deep`, you should make sure that your dimensions match between each layer. Recall that $n^{[l]}$ is the number of units in layer $l$. Thus for example if the size of our input $X$ is $(12288, 209)$ (with $m=209$ examples) then:
+
+<table style="width:100%">
+    <tr>
+        <td>  </td> 
+        <td> **Shape of W** </td> 
+        <td> **Shape of b**  </td> 
+        <td> **Activation** </td>
+        <td> **Shape of Activation** </td> 
+    <tr>
+    <tr>
+        <td> **Layer 1** </td> 
+        <td> $(n^{[1]},12288)$ </td> 
+        <td> $(n^{[1]},1)$ </td> 
+        <td> $Z^{[1]} = W^{[1]}  X + b^{[1]} $ </td> 
+        <td> $(n^{[1]},209)$ </td> 
+    <tr>
+    <tr>
+        <td> **Layer 2** </td> 
+        <td> $(n^{[2]}, n^{[1]})$  </td> 
+        <td> $(n^{[2]},1)$ </td> 
+        <td>$Z^{[2]} = W^{[2]} A^{[1]} + b^{[2]}$ </td> 
+        <td> $(n^{[2]}, 209)$ </td> 
+    <tr>
+       <tr>
+        <td> $\vdots$ </td> 
+        <td> $\vdots$  </td> 
+        <td> $\vdots$  </td> 
+        <td> $\vdots$</td> 
+        <td> $\vdots$  </td> 
+    <tr>
+   <tr>
+        <td> **Layer L-1** </td> 
+        <td> $(n^{[L-1]}, n^{[L-2]})$ </td> 
+        <td> $(n^{[L-1]}, 1)$  </td> 
+        <td>$Z^{[L-1]} =  W^{[L-1]} A^{[L-2]} + b^{[L-1]}$ </td> 
+        <td> $(n^{[L-1]}, 209)$ </td> 
+    <tr>
+   <tr>
+        <td> **Layer L** </td> 
+        <td> $(n^{[L]}, n^{[L-1]})$ </td> 
+        <td> $(n^{[L]}, 1)$ </td>
+        <td> $Z^{[L]} =  W^{[L]} A^{[L-1]} + b^{[L]}$</td>
+        <td> $(n^{[L]}, 209)$  </td> 
+    <tr>
+</table>
+
+Remember that when we compute $W X + b$ in python, it carries out broadcasting. For example, if: 
+
+$$ W = \begin{bmatrix}
+    j  & k  & l\\
+    m  & n & o \\
+    p  & q & r 
+\end{bmatrix}\;\;\; X = \begin{bmatrix}
+    a  & b  & c\\
+    d  & e & f \\
+    g  & h & i 
+\end{bmatrix} \;\;\; b =\begin{bmatrix}
+    s  \\
+    t  \\
+    u
+\end{bmatrix}\tag{2}$$
+
+Then $WX + b$ will be:
+
+$$ WX + b = \begin{bmatrix}
+    (ja + kd + lg) + s  & (jb + ke + lh) + s  & (jc + kf + li)+ s\\
+    (ma + nd + og) + t & (mb + ne + oh) + t & (mc + nf + oi) + t\\
+    (pa + qd + rg) + u & (pb + qe + rh) + u & (pc + qf + ri)+ u
+\end{bmatrix}\tag{3}  $$

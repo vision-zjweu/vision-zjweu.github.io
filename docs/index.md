@@ -48,7 +48,8 @@ layout: spec
 | 周二<br>09.16   | **Introduction + Filtering** | [课件](https://pan.baidu.com/s/1JYNiSFtiaCKW3S0v3-xxiw?pwd=uc43){:target="_blank"} |
 | 周三<br>09.17   | **Image Filtering** | [课件](https://pan.baidu.com/s/1JYNiSFtiaCKW3S0v3-xxiw?pwd=uc43){:target="_blank"} |
 | 周二<br>09.23   | **Image Pyramid** | [课件](https://pan.baidu.com/s/1JYNiSFtiaCKW3S0v3-xxiw?pwd=uc43){:target="_blank"} |
-| 周二<br>09.24   | **Frequency** | [课件](https://pan.baidu.com/s/1JYNiSFtiaCKW3S0v3-xxiw?pwd=uc43){:target="_blank"} |
+| 周三<br>09.24   | **Frequency** | [课件](https://pan.baidu.com/s/1JYNiSFtiaCKW3S0v3-xxiw?pwd=uc43){:target="_blank"} |
+| 周二<br>10.14   | **Machine Learing** |  [课件](https://pan.baidu.com/s/1JYNiSFtiaCKW3S0v3-xxiw?pwd=uc43){:target="_blank"} |
 
 
 # 课程说明
