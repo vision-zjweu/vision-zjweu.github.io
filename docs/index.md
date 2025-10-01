@@ -31,6 +31,7 @@ layout: spec
 ## 理论课
 
  - [PS1: Filtering](hw1.md)
+ - [PS2: Signal Processing](hw2.md)
  <!-- ([英文版](hw1.md)) -->
 <!-- - [Homework 1: Numbers and Images](hw1en.md)  -->
 

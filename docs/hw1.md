@@ -3,7 +3,7 @@ layout: spec
 permalink: /hw1
 latex: true
 
-title: Homework 1 – Filtering
+title: Ps 1 – Filtering
 due: 11:59 p.m. on Wednesday January 31st, 2024
 ---
 
@@ -29,7 +29,7 @@ due: 11:59 p.m. on Wednesday January 31st, 2024
 {% capture autograde %}<i class="fa fa-robot icon-large"></i>{% endcapture %}
 {% capture report %}<i class="fa fa-file icon-large"></i>{% endcapture %}
 
-# Project 1: Filtering
+# Ps 1: Filtering
 
 <!-- <div class="primer-spec-callout warning" markdown="1">
    
