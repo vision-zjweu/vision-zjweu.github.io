@@ -265,7 +265,7 @@ $$ W = \begin{bmatrix}
     u
 \end{bmatrix}\tag{2}$$
 
-Then $WX + b$ will be:
+Then $$WX + b$$ will be:
 
 $$ WX + b = \begin{bmatrix}
     (ja + kd + lg) + s  & (jb + ke + lh) + s  & (jc + kf + li)+ s\\
