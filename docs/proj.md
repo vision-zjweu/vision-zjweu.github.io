@@ -60,11 +60,8 @@
 
 我们**鼓励你提出自己有创意的项目想法**，可以将这些示例作为出发点！  
 此外，在接下来的几周内，我们**可能会继续补充新的项目建议**。
-<!-- 
-- **背景消除算法**： 类似腾讯会议“虚拟背景”功能，使用你的摄像头和opencv实现实时的背景消除，[B站参考](https://www.bilibili.com/video/BV1iX4y1A7si/?spm_id_from=333.337.search-card.all.click&vd_source=c5682721378130716e842e0a8190baf4)。 -->
-<!-- - **图像识别**：
- - [猫狗品种识别](https://www.bilibili.com/video/BV1spxXzBEuZ/?spm_id_from=333.337.search-card.all.click&vd_source=c5682721378130716e842e0a8190baf4) -->
-- **语义分割（Semantic Segmentation）**：使用深度学习实现一种**语义分割算法**，[B站参考]（https://www.bilibili.com/video/BV1bC411b7Po/?spm_id_from=333.337.search-card.all.click&vd_source=c5682721378130716e842e0a8190baf4）。
+
+- **语义分割（Semantic Segmentation）**：使用深度学习实现一种**语义分割算法**，[B站参考](https://www.bilibili.com/video/BV1bC411b7Po/?spm_id_from=333.337.search-card.all.click&vd_source=c5682721378130716e842e0a8190baf4)。
 - **历史照片上色（Colorizing Historical Photographs）**： 实现一种基于深度学习的**图像上色算法**，  并将其应用于**为老旧的黑白照片添加颜色**，  从而实现对历史影像的视觉复原与增强，[B站参考](https://www.bilibili.com/video/BV1eu411X7m7/?spm_id_from=333.337.search-card.all.click&vd_source=c5682721378130716e842e0a8190baf4)。
 - **目标检测（Object Detection）**：开发你自己的**目标检测系统**。  例如，可以考虑设计：
     - 基于深度学习的果蔬检测识别系统,[B站参考](https://www.bilibili.com/video/BV1Ym421p7BC/?spm_id_from=333.337.search-card.all.click&vd_source=c5682721378130716e842e0a8190baf4)
