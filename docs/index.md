@@ -22,6 +22,7 @@ layout: spec
 
 </div> -->
 [期末项目指南](proj.md) 
+---
 
 - [0: 环境搭建](conda.md) 
 - 1: Numpy
