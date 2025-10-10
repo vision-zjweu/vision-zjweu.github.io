@@ -87,5 +87,5 @@ due: 11:59 p.m. on Wednesday January 31st, 2024
     - 基于深度学习的果蔬检测识别系统,[B站参考](https://www.bilibili.com/video/BV1Ym421p7BC/?spm_id_from=333.337.search-card.all.click&vd_source=c5682721378130716e842e0a8190baf4)
     - 基于深度学习的交通标志检测识别系统,[B站参考](https://www.bilibili.com/video/BV1aF4m1L7tb/?spm_id_from=333.337.search-card.all.click&vd_source=c5682721378130716e842e0a8190baf4)
     - 姿态识别, [B站参考](https://www.bilibili.com/video/BV1zUCTYvEtW/?spm_id_from=333.337.search-card.all.click&vd_source=c5682721378130716e842e0a8190baf4)
-- **图像描述生成（Image Captioning）**：实现一个**神经网络图像描述模型（neural captioning model）**，  使系统能够根据输入图像**自动生成相应的文字说明或描述性句子**。[B站参考](bilibili.com/video/BV1zt411x7pt/?spm_id_from=333.337.search-card.all.click)
+- **图像描述生成（Image Captioning）**：实现一个**神经网络图像描述模型（neural captioning model）**，  使系统能够根据输入图像**自动生成相应的文字说明或描述性句子**。[B站参考](https://www.bilibili.com/video/BV1zt411x7pt/?spm_id_from=333.337.search-card.all.click)
 - **Vit（Vision Transformer）**: 做一个使用ViT技术的应用，[B站参考](https://www.bilibili.com/video/BV1fH4y1H7mV/?spm_id_from=333.337.search-card.all.click&vd_source=c5682721378130716e842e0a8190baf4)
