@@ -1,35 +1,74 @@
-## Project Guidelines
-For the course project you will explore a topic in-depth of your choosing in a group of 3-5 students. The course project should amount to roughly one homework's worth of work per person.
+## 实训最终项目指南
 
-This can be an implementation (implement an existing algorithm); an application (apply a computer vision algorithm to a new problem); or research (trying to invent something new). All are totally fine.
 
-If you don't have any ideas or want a reasonable idea, don't worry! We have a [list of suggested projects](https://docs.google.com/document/d/1R3Tc_cFyHcLxhi1K-6H7IPWpwoSRS0MnC4bfvkAeqao/edit?usp=sharing). Any of these would be feasible to complete as a project. If you would like to do a pre-scoped-out project, you do not have to write much for a project proposal.
+在本课程项目中，你将与其他同学组成1-4人的小组，深入探索一个你所选择的主题。
 
-We expect:
-- That you explore a challenging problem.
-- You to write a large fraction of the code yourself with the help of libraries like Pytorch, Numpy, etc.
-- That the projects are a bit more open-ended than the homeworks
-- That you get some experience with doing a project from start to finish, from developing the method to evaluating it and writing it up.
+你可以从下方提供的项目想法列表中选择一个，也可以提出**你自己的新课题**。  
+我们**强烈鼓励你自主提出项目想法**——这样你会学得更多，也会更有乐趣！
 
-We do not expect:
-- A course project that is worthy of a publication.
-- A new idea (implementing an old idea is totally fine!).
-- That your project works (so long as you can identify and diagnose why the system doesn't work).
 
-### Proposal 
 
-The project proposal is due at the very latest on March 27, 2024 11:59pm to Gradescope, but we'll start giving feedback on March 13. You only need to submit one project proposal per group and add all the other members on Gradescope.
+- 如果你要提出一个新项目，请在提案中说明：
+  1. 你要解决的是什么问题？  
+  2. 这个问题为什么有趣或重要？  
+  3. 你计划使用哪些方法来解决？  
+  4. 你将如何评估你的成果？
 
-Your project proposal should be a 1-page PDF that answers the following questions. If you are following a suggested project, your project statement can be brief and your method, data, and evaluation can copy from the suggestions (that's why we provide them):
 
-- **Project Title**: What is the name of your project?
-- **Group Members**: What are the names and uniqnames of the students involved?
-- **Group Dynamics**: How will you communicate? When will you meet? How will you resolve group issues? What is a reasonable timeframe for responses
-- **Problem Statement**: What is the problem you are trying to solve?
-- **Approach**: How do you plan to go about solving this problem? You don’t need to have everything figured out exactly, but you should have a vague sense of how you will proceed.
-- **Data**: What dataset do you plan to use? A common failure mode for projects is to have a cool idea, but no idea where to get the necessary data. We recommend against collecting your own dataset for the project, as this will significantly increase the complexity and workload; instead you should try to get away with existing datasets.
-- **Computational Resources**: For this question, it's fine to guess – the point of the proposal is that we will give you feedback if you're proposing something really out there. What computational resources will you use for this project? For some projects a laptop may be completely fine. But if you are planning to train any kind of neural network, you should have an estimate of how much time a model should take to train, and where you will get access to the computational resources you need. Google Colab is a great free resources for small amounts of GPU resources; but be aware that this is not sufficient for training large-scale models.
-- **Evaluation**: How do you plan to evaluate whether your project is successful? What metric will you use? Is there some simple baseline that you plan to compare your model against?
 
-### Proposal Grading
-The proposal is graded on completeness and meant as an opportunitity to get feedback on what you plan to do. Within reason, there are no wrong answers. We put some grade to ensure that there's an incentive to submit something.
+### 项目提案指南
+
+
+每个小组只需提交一份项目提案。
+
+你的项目提案应为 **一页 PDF 文件**，并回答以下问题：  
+
+#### **提案应包含的内容**
+
+- **项目标题**：  
+  你的项目名称是什么？
+
+- **小组成员**：  
+  小组成员的姓名和学号是什么？
+
+- **问题陈述**：  
+  你们要解决的核心问题是什么？
+
+- **研究方法**：  
+  你们打算如何解决这个问题？不需要所有细节都完全确定，但应有一个大致的实施思路。
+
+- **数据集**：  
+  你们计划使用什么数据集？  
+  项目常见的失败原因是“想法很酷，但没有合适的数据”。  
+  **建议不要自己收集数据集**，因为这会大幅增加复杂度和工作量。应尽量使用现有的公开数据集。
+
+- **计算资源**：  
+  这个问题允许你“猜测”。  
+  你们将使用哪些计算资源？  
+  对于某些项目，笔记本电脑就足够了；但如果你计划训练神经网络，需要估算训练时间。  
+
+- **Evaluation（结果评估）**：  
+  你们将如何判断项目是否成功？  
+  将使用什么指标？  
+  是否有简单的基准模型(baseline model)用于比较？
+
+
+### 参考题目
+
+为了帮助你构思项目，我们在下方提供了一些示例想法。  
+请注意，这些项目仅涵盖了你**可能尝试内容的一小部分**。  
+
+我们**鼓励你提出自己有创意的项目想法**，可以将这些示例作为出发点！  
+此外，在接下来的几周内，我们**可能会继续补充新的项目建议**。
+<!-- 
+- **背景消除算法**： 类似腾讯会议“虚拟背景”功能，使用你的摄像头和opencv实现实时的背景消除，[B站参考](https://www.bilibili.com/video/BV1iX4y1A7si/?spm_id_from=333.337.search-card.all.click&vd_source=c5682721378130716e842e0a8190baf4)。 -->
+<!-- - **图像识别**：
+ - [猫狗品种识别](https://www.bilibili.com/video/BV1spxXzBEuZ/?spm_id_from=333.337.search-card.all.click&vd_source=c5682721378130716e842e0a8190baf4) -->
+- **语义分割（Semantic Segmentation）**：使用深度学习实现一种**语义分割算法**，[B站参考]（https://www.bilibili.com/video/BV1bC411b7Po/?spm_id_from=333.337.search-card.all.click&vd_source=c5682721378130716e842e0a8190baf4）。
+- **历史照片上色（Colorizing Historical Photographs）**： 实现一种基于深度学习的**图像上色算法**，  并将其应用于**为老旧的黑白照片添加颜色**，  从而实现对历史影像的视觉复原与增强，[B站参考](https://www.bilibili.com/video/BV1eu411X7m7/?spm_id_from=333.337.search-card.all.click&vd_source=c5682721378130716e842e0a8190baf4)。
+- **目标检测（Object Detection）**：开发你自己的**目标检测系统**。  例如，可以考虑设计：
+    - 基于深度学习的果蔬检测识别系统,[B站参考](https://www.bilibili.com/video/BV1Ym421p7BC/?spm_id_from=333.337.search-card.all.click&vd_source=c5682721378130716e842e0a8190baf4)
+    - 基于深度学习的交通标志检测识别系统,[B站参考](https://www.bilibili.com/video/BV1aF4m1L7tb/?spm_id_from=333.337.search-card.all.click&vd_source=c5682721378130716e842e0a8190baf4)
+    - 姿态识别, [B站参考](https://www.bilibili.com/video/BV1zUCTYvEtW/?spm_id_from=333.337.search-card.all.click&vd_source=c5682721378130716e842e0a8190baf4)
+- **图像描述生成（Image Captioning）**：实现一个**神经网络图像描述模型（neural captioning model）**，  使系统能够根据输入图像**自动生成相应的文字说明或描述性句子**。[B站参考](bilibili.com/video/BV1zt411x7pt/?spm_id_from=333.337.search-card.all.click)
+- **Vit（Vision Transformer）**: 做一个使用ViT技术的应用，[B站参考](https://www.bilibili.com/video/BV1fH4y1H7mV/?spm_id_from=333.337.search-card.all.click&vd_source=c5682721378130716e842e0a8190baf4)
