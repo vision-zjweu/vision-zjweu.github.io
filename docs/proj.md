@@ -1,5 +1,35 @@
-## 实训最终项目指南
+---
+layout: spec
+permalink: /proj
+latex: true
 
+title: 实训项目指南
+due: 11:59 p.m. on Wednesday January 31st, 2024
+---
+
+<link href="style.css" rel="stylesheet">
+<div style="display:none">
+	<!-- Define LaTeX commands here -->
+	\(
+		\DeclareMathOperator*{\argmin}{arg\,min}
+
+		\newcommand{\DB}{\mathbf{D}}
+		\newcommand{\NB}{\mathbf{N}}
+		\newcommand{\PB}{\mathbf{P}}
+		\newcommand{\SB}{\mathbf{S}}
+		\newcommand{\XB}{\mathbf{X}}
+
+		\newcommand{\xB}{\mathbf{x}}
+		\newcommand{\yB}{\mathbf{y}}
+	\)
+
+</div>
+
+{% capture code %}<i class="fa fa-code icon-large"></i>{% endcapture %}
+{% capture autograde %}<i class="fa fa-robot icon-large"></i>{% endcapture %}
+{% capture report %}<i class="fa fa-file icon-large"></i>{% endcapture %}
+
+## 实训最终项目指南
 
 在本课程项目中，你将与其他同学组成1-4人的小组，深入探索一个你所选择的主题。
 
