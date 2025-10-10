@@ -21,14 +21,16 @@ layout: spec
    **Important:** 上课前请在自己电脑安装好Anaconda、VS Code（参考 0: 环境搭建）和腾讯会议。
 
 </div> -->
-[期末项目指南](proj.md) 
 
----
+
 
 - [0: 环境搭建](conda.md) 
 - 1: Numpy
 - 2: Convolution/Edge Dectection
 <!-- - [练习 2: 数据可视化](hw2.md) -->
+### 实训期末项目
+
+- [项目提案指南](proj.md) 
 
 ## 理论课
 
