@@ -49,7 +49,7 @@ due: 11:59 p.m. on Wednesday January 31st, 2024
 <figure class="figure-container">
 	<div class="flex-container">
 		<figure>
-			<img src="{{site.url}}/assets/hw2/hw2.png" alt="Laplacian pyramids" width="800px">
+			<img src="{{site.url}}/assets/hw2/hw2.png" alt="Laplacian pyramids" width="600px">
 		</figure>
 	</div>
 	<figcaption>图 1: 使用 6 层的拉普拉斯金字塔进行融合。请注意，你的结果可能会与我们的有所不同。
