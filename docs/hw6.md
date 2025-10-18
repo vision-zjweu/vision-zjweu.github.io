@@ -1,6 +1,6 @@
 ---
 layout: spec
-permalink: /hw3
+permalink: /hw6
 latex: true
 
 title: PS 2 – Image Blending
