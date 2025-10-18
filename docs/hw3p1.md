@@ -130,17 +130,6 @@ $$
 运行下方提供的代码单元，观察**归一化（normalization）** 对模型准确率的影响。  
 
 
-<figure class="figure-container">
-	<div class="flex-container">
-		<figure>
-			<img src="{{site.url}}/assets/hw3/hw3_1.png" alt="Laplacian pyramids" width="600px">
-		</figure>
-	</div>
-	<figcaption>图 1: 使用 6 层的拉普拉斯金字塔进行融合。请注意，你的结果可能会与我们的有所不同。
-  </figcaption>
-</figure>
-
-
 
 
 
@@ -167,20 +156,4 @@ $$
 学习通里提交文件清单（请不要提交打包zip文件）:
 - [ ] `你的学号.ipynb`
 - [ ] `你的学号.pdf`
-
-# 参考结果
-注意：这里仅提供部分结果
-1.  
-
-<img src="{{site.url}}/assets/hw2/hw2_ref1.png" alt="vis_{{i}}" width="400px">
-
-<img src="{{site.url}}/assets/hw2/hw2_ref2.png" alt="vis_{{i}}" width="400px">
-
-2.
-
-<img src="{{site.url}}/assets/hw2/hw2_ref3.png" alt="vis_{{i}}" width="400px">
-
-<img src="{{site.url}}/assets/hw2/hw2_ref4.png" alt="vis_{{i}}" width="400px">
-
-<img src="{{site.url}}/assets/hw2/hw2_ref5.png" alt="vis_{{i}}" width="400px">
 
