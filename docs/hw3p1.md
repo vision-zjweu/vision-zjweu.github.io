@@ -72,11 +72,11 @@ due: 11:59 p.m. on Wednesday January 31st, 2024
 
 
 
-**(a)** 对于笔记本中定义的 `KNearestNeighbor` 类，请完成以下方法的实现：
+- **(a)** 对于笔记本中定义的 `KNearestNeighbor` 类，请完成以下方法的实现：
 
-**i. (1 分)**  
-请阅读方法 `compute_distance_two_loops` 的函数头（header），理解其输入与输出。  
-根据笔记本中的提示，补全该方法的剩余部分，用以计算测试集图像与训练集图像之间的 **L2 距离**。
+	- **i. (1 分)**  
+	请阅读方法 `compute_distance_two_loops` 的函数头（header），理解其输入与输出。  
+	根据笔记本中的提示，补全该方法的剩余部分，用以计算测试集图像与训练集图像之间的 **L2 距离**。
 
 **说明：**  
 L2 距离的计算方式是：
