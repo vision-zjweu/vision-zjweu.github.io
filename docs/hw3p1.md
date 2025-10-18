@@ -182,7 +182,7 @@ $$
 
 我们提供了关于梯度的公式 $$ \frac{\partial L}{\partial W} $$，该结果也需要由 `softmax_loss_naive` 返回：
 
-对于正确类别 $$y_i $$：  
+
 $$
 \frac{\partial L_i}{\partial W_{y_i}} =
 \left(
@@ -191,7 +191,6 @@ $$
 \tag{4}
 $$
 
-对于错误类别$$j \neq y_i $$：  
 $$
 \frac{\partial L_i}{\partial W_j} =
 \left(
