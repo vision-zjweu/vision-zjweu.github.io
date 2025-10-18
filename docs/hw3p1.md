@@ -85,8 +85,8 @@ due: 11:59 p.m. on Wednesday January 31st, 2024
 		$$
 		即对两幅图像中对应像素的差值平方求和后再开方。
 
-	**提示：**  
-	你可以使用 `np.linalg.norm` 来计算 L2 距离。
+		**提示：**  
+		>你可以使用 `np.linalg.norm` 来计算 L2 距离。
 
 
 	- **ii. (20 分)**  
