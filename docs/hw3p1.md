@@ -60,6 +60,17 @@ due: 11:59 p.m. on Wednesday January 31st, 2024
 
 此外，代码中还提供了一个可以使用 **不同图像尺寸** 运行的选项，你可以自由尝试修改这一参数（但在提交前，请再次将其恢复为默认设置）。
 
+<figure class="figure-container">
+	<div class="flex-container">
+		<figure>
+			<img src="{{site.url}}/assets/hw3/hw3_1.png" alt="Laplacian pyramids" width="600px">
+		</figure>
+	</div>
+	<figcaption>**图 1:** 来自 **Imagenette** 的部分示例图像。
+  </figcaption>
+</figure>
+
+
 
 **(a)** 对于笔记本中定义的 `KNearestNeighbor` 类，请完成以下方法的实现：
 
@@ -122,7 +133,7 @@ $$
 <figure class="figure-container">
 	<div class="flex-container">
 		<figure>
-			<img src="{{site.url}}/assets/hw2/hw3_1.png" alt="Laplacian pyramids" width="600px">
+			<img src="{{site.url}}/assets/hw3/hw3_1.png" alt="Laplacian pyramids" width="600px">
 		</figure>
 	</div>
 	<figcaption>图 1: 使用 6 层的拉普拉斯金字塔进行融合。请注意，你的结果可能会与我们的有所不同。
