@@ -160,6 +160,15 @@ $$
 L_i(\mathbf{s}, y) = -\log \frac{e^{s_{y_i}}}{\sum_{j=1}^{C} e^{s_j}}
 $$
 
+整个小批量（minibatch）的总损失 \( L \) 可以通过对所有样本的单个损失取平均值来计算：
+
+
+
+$$
+\mathcal{L}(W) = \frac{1}{N} \sum_{i=1}^{N} L_i
+$$
+
+
 
 
 
