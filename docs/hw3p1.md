@@ -41,8 +41,8 @@ due: 11:59 p.m. on Wednesday January 31st, 2024
 
 
 
-
-## Nearest Neighbor Classification （基础部分）
+## 基础部分
+### Nearest Neighbor Classification
 
 
 
