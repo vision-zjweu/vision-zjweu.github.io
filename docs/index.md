@@ -37,7 +37,7 @@ layout: spec
 
  - [PS1: Filtering](hw1.md)
  - [PS2: Signal Processing](hw2.md)
- - [PS3: Introduction to Machine Learning](hw3p1.md)
+ - [PS3: Introduction to Machine Learning](hw3.md)
  <!-- ([英文版](hw1.md)) -->
 <!-- - [Homework 1: Numbers and Images](hw1en.md)  -->
 
