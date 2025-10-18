@@ -1,6 +1,6 @@
 ---
 layout: spec
-permalink: /hw3p1
+permalink: /hw3
 latex: true
 
 title: PS 3 – Introduction to Machine Learning(basecamp)
