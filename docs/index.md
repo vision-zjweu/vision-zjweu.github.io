@@ -26,7 +26,8 @@ layout: spec
 
 - [0: 环境搭建](conda.md) 
 - 1: Numpy
-- 2: Convolution/Edge Dectection
+- 2: 边缘检测
+- 3: 图像分类（KNN）
 <!-- - [练习 2: 数据可视化](hw2.md) -->
 ### 实训期末项目
 
