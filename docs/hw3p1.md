@@ -178,6 +178,31 @@ L_i = -\log \frac{e^{s_{y_i} - \max_k(s_k)}}{\sum_{j=1}^{C} e^{s_j - \max_k(s_k)
 $$
 
 
+**梯度（Gradients）**  
+
+我们提供了关于梯度的公式 \( \frac{\partial L}{\partial W} \)，该结果也需要由 `softmax_loss_naive` 返回：
+
+对于正确类别 \( y_i \)：  
+\[
+\frac{\partial L_i}{\partial W_{y_i}} =
+\left(
+\frac{e^{s_{y_i} - \max_k(s_k)}}{\sum_{j=1}^{C} e^{s_j - \max_k(s_k)}} - 1
+\right) x_i
+\tag{4}
+\]
+
+对于错误类别 \( j \neq y_i \)：  
+\[
+\frac{\partial L_i}{\partial W_j} =
+\left(
+\frac{e^{s_j - \max_k(s_k)}}{\sum_{j=1}^{C} e^{s_j - \max_k(s_k)}}
+\right) x_i,
+\quad j \neq y_i
+\tag{5}
+\]
+
+如笔记本中所述，在实现完这些公式后，请运行指定的代码单元以进行 **loss 检查** 和 **梯度检查（gradient check）**，确保结果与预期一致。
+
 
 # 任务清单
 
