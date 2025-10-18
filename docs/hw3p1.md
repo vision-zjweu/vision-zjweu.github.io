@@ -151,14 +151,6 @@ L_i(\mathbf{s}, y) = -\log \frac{e^{s_{y_i}}}{\sum_{j=1}^{C} e^{s_j}}
 $$
 
 
-单个图像的 **Softmax 损失** $$ L_i $$ 可定义为：
-
-
-
-$$
-L_i(\mathbf{s}, y) = -\log \frac{e^{s_{y_i}}}{\sum_{j=1}^{C} e^{s_j}}
-$$
-
 整个小批量（minibatch）的总损失 $$\mathcal{L}$$ 可以通过对所有样本的单个损失取平均值来计算：
 
 
