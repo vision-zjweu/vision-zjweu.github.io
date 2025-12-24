@@ -45,6 +45,7 @@ due: 11:59 p.m. on Wednesday January 31st, 2024
 ## Image blending
 
 我们将使用拉普拉斯金字塔（Laplacian pyramids）来融合两张图像。
+We will use Laplacian pyramids to blend two images.
 
 <figure class="figure-container">
 	<div class="flex-container">
@@ -52,41 +53,47 @@ due: 11:59 p.m. on Wednesday January 31st, 2024
 			<img src="{{site.url}}/assets/hw2/hw2.png" alt="Laplacian pyramids" width="600px">
 		</figure>
 	</div>
-	<figcaption>图 1: 使用 6 层的拉普拉斯金字塔进行融合。请注意，你的结果可能会与我们的有所不同。
+	<figcaption>图 1: 使用 6 层的拉普拉斯金字塔进行融合。请注意，你的结果可能会与我们的有所不同。Blending with a Laplacian pyramid of 6 levels. Note that your result may look different than ours.
   </figcaption>
 </figure>
 
 
 
-### 1 图像金字塔
+### 1 图像金字塔 Image Pyramid
 
 *(50 points)* 
 
 
 首先，我们将实现以下函数，这些函数将用于：从一幅图像构建拉普拉斯金字塔，以及从拉普拉斯金字塔重建图像。
+First, we will implement the following functions, which will be used to create a Laplacian pyramid from an image, and to reconstruct an image from a Laplacian pyramid.
 
 请回忆：我们需要在高斯金字塔中进行降采样（downsample），并在拉普拉斯金字塔中进行升采样（upsample）。在你的实现中，**金字塔的升采样与降采样都应使用高斯核**。用于升采样的核应与用于降采样的核相同，只是其核本身需要再乘以 4。
 >（提示：在实现金字塔升采样时，`np.insert` 可能会很有用；在实现 `pyramid.upsample` 与 `pyramid.downsample` 时，`scipy.ndimage.gaussian_filter` 也可能派上用场——务必阅读其关于“radius”的参数说明，以便设置正确的核大小）。将高斯核的标准差设为 $$\sigma = 1$$。
+You’ll recall that we’ll need to downsample in the Gaussian pyramid and downsample in the Laplacian pyramid. In your implementation, use Gaussian kernels for pyramid upsample and pyramid downsample. The kernel for pyramid upsample should be the same as the one for pyramid downsample, except that the kernel itself will be multiplied by 4. (Hint: np.insert may come in handy when implementing pyramid upsample. Also, scipy.ndimage.gaussian filter may come in handy when implementing pyramid.upsample and pyramid.downsample - make sure to read about their ”radius” argument in order to set the correct kernel size). Set the standard deviation of the Gaussian kernel as σ = 1.
+
 
 - `pyramid_upsample`	
 -  `pyramid_downsample` 
 
 现在你已经可以对图像进行降采样与升采样了，就可以实现 **高斯金字塔** 和 **拉普拉斯金字塔** 了。（提示：记住，构建拉普拉斯金字塔需要从**高斯金字塔的最高层**开始。）
-
+Now that you can downsample and upsample your images, you can implement the Gaussian and Laplacian pyramids. (Hint: remember that you need the highest level of the Gaussian pyramid to start the Laplacian pyramid.)
 - `gen_gaussian_pyramid `
 - `gen laplacian pyramid`
 
 
 现在你已经能够生成拉普拉斯金字塔了，可以用它来重建原始图像。请使用 **4 层** 的拉普拉斯金字塔。回顾课堂内容：要重建原始图像，需要**从高斯金字塔的最高层开始**，反复进行**上采样**，然后与**下一层金字塔的拉普拉斯**相加。
-
 请绘制：**原始图像**、**拉普拉斯金字塔**以及**重建后的图像**。
 
 （另外要注意：在图像相减时，`numpy` 与 `cv2` 可能会进行裁剪（clipping）。请尝试使用**其他方式**进行图像相减，以确保不会发生裁剪！）
 
+Now that you can generate a Laplacian pyramid, you can reconstruct the original image with it. Use a Laplacian pyramid with 4 levels. Recall from lecture that, to reconstruct the original image, you repeatedly upsample the Laplacian (starting with the highest level of the Gaussian pyramid), and then add back the Laplacian from the next level of the pyramid . Please plot the original image, the Laplacian pyramid, and the reconstructed image. (Also, numpy and cv2 libraries perform a clipping when subtracting images. Try to use a different method for image subtraction to make sure clipping doesn’t happen!)
+
+
+
 - `reconstruct_img`
 
 
-### 2 图像融合
+### 2 图像融合 Image blending
 
 *(20 points)* 
 
@@ -96,17 +103,22 @@ due: 11:59 p.m. on Wednesday January 31st, 2024
 
 为了得到**彩色图像**，你可以对每个**颜色通道**独立进行融合。在我们的实现中，这不需要额外代码（由于 NumPy 的广播机制（broadcasting），同一套代码同时适用于单通道与多通道）。不过，你的实现可能有所不同。
 
+Implement the function pyramid blend(im1, im2, mask, num levels). Its inputs are two images and a binary mask (indicating which pixels to use from each image). The function produces a Laplacian pyramid with num levels levels that will blend the two image inputs. Use your function to blend the images of an orange and an apple that we provided in the Colab notebook. Plot the blended images with num levels ∈ {1, 2, 3, 4, 5, 6}. Please describe the difference between the blended images as the number of levels in the Laplacian pyramid varies: how does the result change as we increase the number of levels? Please include this in the cell in the .ipynb file, rather than uploading a separate document with a written answer.
+
+
+To obtain color images, you can apply the blending to each color channel independently. In our imple- mentation, this did not require any extra code (the same code worked on single-channel and multi-channel images due to numpy broadcasting). However, your implementation may differ.
+
 
 ### 3 自由发挥
 
 *(10 points)*
 
 请使用你的代码来融合你自己的图像，你可以通过改变mask的边界获取需要的融合边界。（可以尝试着有创意一点！）
+use your own code to do the blending, u can change the boudary of the mask to get the blending boundary(Be creative)
 
+## 傅立叶变换 Fourier transform
 
-## 傅立叶变换
-
-### 1 卷积定理
+### 1 卷积定理 convolution theorem
 *(20 points)* 
 
 使用高斯滤波器对给定图像进行卷积：
@@ -118,8 +130,9 @@ due: 11:59 p.m. on Wednesday January 31st, 2024
 
 >注意：在空间域与频率域实现之间，图像**边界处理**可能会略有差异。对于本题来说，这是**可以接受的**。
 
+Convolve the provided image with a Gaussian filter: i) using direct convolution in the spatial domain, and ii) product in the frequency domain (via the convolution theorem). To perform DFT and in- verse DFT, use fft2 and ifft2 from scipy.fft. For 2D convolution, we use scipy.signal.convolve2d. Note that doing this in the spatial domain versus the frequency domain might result in slightly different boundaries. That is okay for this problem!
 
-# 任务清单
+<!-- # 任务清单
 
 本节旨在帮助你理清并跟踪需要完成的各项任务：  
 
@@ -131,7 +144,6 @@ due: 11:59 p.m. on Wednesday January 31st, 2024
 - [ ] **傅立叶变换**:
   - [ ] 1 - {{ code }} **(20分)** 卷积定理
 
-  <!-- - [ ] 4 - {{ code }} **(25分)** 噪声消除 -->
 
 
 # 提交清单
@@ -154,5 +166,5 @@ due: 11:59 p.m. on Wednesday January 31st, 2024
 
 <img src="{{site.url}}/assets/hw2/hw2_ref4.png" alt="vis_{{i}}" width="400px">
 
-<img src="{{site.url}}/assets/hw2/hw2_ref5.png" alt="vis_{{i}}" width="400px">
+<img src="{{site.url}}/assets/hw2/hw2_ref5.png" alt="vis_{{i}}" width="400px"> -->
 
